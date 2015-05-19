@@ -35,13 +35,13 @@
                     <tr>
                     	<td>
                         	<div>区服：iOS</div>
-                            <div>角色名称：skq1016</div>
+                            <div>角色：skq1016</div>
                             <div>账户：skq1017@icloud.com</div>
-                            <div>用户密码：Jiamengxiao55</div>
+                            <div>密码：Jiamengxiao55</div>
                         </td>
                         <td class="baodetail_2_2">
-                        	<div>用户类型：游戏账号</div>
-                        	<div>手机号：13260073625</div>
+                        	<div>类型：游戏账号</div>
+                        	<div>手机：13260073625</div>
                     		<div>QQ：736855039</div>
                         </td>
                     </tr>
@@ -50,17 +50,47 @@
             <td class="td price">250</td>
             <td class="td quantity">1</td>
             <td class="td amount">250</td>
-            <td class="td trade_status">付款成功</td>
+            <td class="td trade_status col_green">付款成功</td>
             <td class="td trade_operate"><a href="javascript:;">操作</a></td>
             <td class="td remarks">
-            	<div>成本价格:20元</div>
+            	<div>成本：20元</div>
                 <div>处理：doris，05-19 13:15，这是备注</div>
                 <div>入账：lily，05-19 13:15，这是备注</div>
             </td>
         </tr>
     </tbody>
-    
-    
 </table>
+
+<!--<div class="paging clearfix">
+	<div class="page_size">
+    	每页显示：
+        <select>
+        	<option value="10" selected="selected">10</option>
+            <option value="20">20</option>
+            <option value="50">50</option>
+        </select>
+    </div>
+    <div class="page_number">
+    	<a href="javascript:;" data-page="1" class="n">上一页</a>
+    	<a href="javascript:;" data-page="1" class="n selected">1</a>
+        <a href="javascript:;" data-page="2" class="n ">2</a>
+        <a href="javascript:;" data-page="3" class="n">3</a>
+        <a href="javascript:;" data-page="4" class="n">4</a>
+        <a href="javascript:;" data-page="5" class="n">5</a>
+        <a href="javascript:;" data-page="5" class="n dot">...</a>
+        <a href="javascript:;" data-page="25" class="n">25</a>
+        <a href="javascript:;" data-page="2" class="n">下一页</a>
+    </div>
+</div>-->
+<div class="paging clearfix" id="paging"></div>
+
+<script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>
+<script type="text/javascript" src="js/common.js"></script>
+<script type="text/javascript">
+function abc(x,y){
+	console.log(x+" "+y);
+}
+$.webpage({"id":"paging","pagecurrent":17,"totalrows":200,"pagesize":10,"callback":"abc"});
+</script>
 </body>
 </html>
