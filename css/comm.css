@@ -1,0 +1,27 @@
+@charset "utf-8";
+/* 2015-05-19 Diaosi */
+
+body,ul,ol,li,h1,h2,h3,h4,h5,h6,p,pre,code,form,dl,dd,dt,input,textarea,button,th,td,iframe{ margin:0; padding:0}
+html{ font:12px/1.5 tahoma, arial, \5b8b\4f53, sans-serif}
+img{ border:0}
+h1,h2,h3,h4,h5,h6{ font-size:100%}
+button,input,select,textarea{ font-size:100%; vertical-align:baseline; *vertical-align:middle}
+ol,ul{ list-style:none}
+textarea{ overflow:auto; vertical-align:top; resize:vertical}
+table{ border-collapse:collapse; border-spacing:0}
+em,i,code,cite,address,th{font-style:normal}
+.clear{clear:both;line-height:0;font-size:0}
+.clearfix{*zoom:1;_height:1px}
+.clearfix:after{content:".";display:block;height:0;clear:both;visibility:hidden}
+
+/*按钮*/
+.btn{ border:0; padding:7px 14px; font-size:14px; cursor:pointer; outline:none; -webkit-appearance:none}
+.btn_green{ background:#35aa47; color:#fff}
+.btn_green:hover,.btn_green:active{ background:#1d943b}
+/*颜色*/
+.col_red{ color:#ff0000}
+/*提示*/
+.alert{ color:#c09853; padding:8px 35px 8px 14px; margin-bottom:15px; text-shadow:0 1px rgba(255,255,255,0.5); background:#fcf8e3; border:1px solid #fbeed5}
+.alert_error{ color:#b94a48; background:#f2dede; border-color:#eed3d7}
+/*隐藏*/
+.hide{ display:none}
