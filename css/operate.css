@@ -20,7 +20,8 @@ body{ padding:20px}
 .bought_table .bought_bd .remarks{ vertical-align:top; color:#9c9c9c}
 .baodetail{ width:100%; color:#9c9c9c}
 .baodetail_1{ padding-bottom:2px; color:#3c3c3c}
-.baodetail .baodetail_2_2{ vertical-align:top}
+.baodetail_2_1{ width:60%; word-break:break-all}
+.baodetail_2_2{ width:40%; vertical-align:top}
 
 
 
