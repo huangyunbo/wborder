@@ -4,7 +4,7 @@
 body,ul,ol,li,h1,h2,h3,h4,h5,h6,p,pre,code,form,dl,dd,dt,input,textarea,button,th,td,iframe{ margin:0; padding:0}
 html{ font:12px/1.5 tahoma, arial, \5b8b\4f53, sans-serif}
 img{ border:0}
-h1,h2,h3,h4,h5,h6{ font-size:100%}
+h1,h2,h3,h4,h5,h6{ font-size:100%; font-weight:normal}
 button,input,select,textarea{ font-size:100%; vertical-align:baseline; *vertical-align:middle}
 ol,ul{ list-style:none}
 textarea{ overflow:auto; vertical-align:top; resize:vertical}
