@@ -13,6 +13,7 @@ em,i,code,cite,address,th{font-style:normal}
 .clear{clear:both;line-height:0;font-size:0}
 .clearfix{*zoom:1;_height:1px}
 .clearfix:after{content:".";display:block;height:0;clear:both;visibility:hidden}
+a{ text-decoration:none; outline:none}
 
 /*按钮*/
 .btn{ border:0; padding:7px 14px; font-size:14px; cursor:pointer; outline:none; -webkit-appearance:none}
