@@ -22,7 +22,10 @@ body{ padding:20px}
 .baodetail_1{ padding-bottom:2px; color:#3c3c3c}
 .baodetail_2_1{ width:60%; word-break:break-all}
 .baodetail_2_2{ width:40%; vertical-align:top}
-
+/*弹窗*/
+.dialog_handle{ width:500px}
+.dialog_handle .control_label{ width:80px}
+.dialog_handle .control_content{ margin-left:90px}
 
 
 
