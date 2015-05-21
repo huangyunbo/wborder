@@ -124,7 +124,7 @@
 <div class="paging clearfix" id="paging"></div>
 
 
-<!--<div class="dialog_handle">
+<div class="dialog_handle">
     <div class="control_group">
         <div class="control_label">宝贝：</div>
         <div class="control_content fs_14">海岛奇兵 iOS正版充值328元6500钻石（需关联）</div>
@@ -135,20 +135,22 @@
     </div>
     <div class="control_group">
         <div class="control_label">操作：</div>
-        <div class="control_content">
-        	<label class="radio_label"><input type="radio" name="type_isaccount" class="radio">发货</label>
-            <label class="radio_label"><input type="radio" name="type_isaccount" class="radio">取消订单</label>
+        <div class="control_content" id="radio_label_wrap">
+        	<label class="radio_label"><input type="radio" name="type_isaccount" class="radio" value="3">发货</label>
+            <label class="radio_label"><input type="radio" name="type_isaccount" class="radio" value="5">取消订单</label>
+            <span class="prompt_error hide">必填</span>
         </div>
     </div>
-    <div class="control_group">
+    <div class="control_group" id="basicprice_wrap">
         <div class="control_label">成本：</div>
-        <div class="control_content fs_14"><input type="text" value="" class="ipt w100">&nbsp;元</div>
+        <div class="control_content"><input type="text" value="" class="ipt w100" id="basicprice">&nbsp;<span class="fs_14">元</span><span class="prompt_error hide">必填</span></div>
     </div>
     <div class="control_group">
         <div class="control_label">备注：</div>
         <div class="control_content"><textarea class="textarea w200" rows="3"></textarea></div>
     </div>
-</div>-->
+</div>
+<div id="tijiao">提交</div>
 
 <script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>
 <script type="text/javascript" src="js/common.js"></script>
@@ -174,14 +176,16 @@ var dialog_handle_html = '<div class="dialog_handle">'+
 							'</div>'+
 							'<div class="control_group">'+
 								'<div class="control_label">操作：</div>'+
-								'<div class="control_content ">'+
-									'<label class="radio_label"><input type="radio" name="type_isaccount" class="radio">发货</label>'+
-									'<label class="radio_label"><input type="radio" name="type_isaccount" class="radio">取消订单</label>'+
+								'<div class="control_content" id="radio_label_wrap">'+
+									'<label class="radio_label"><input type="radio" name="type_isaccount" class="radio" value="3">发货</label>'+
+									'<label class="radio_label"><input type="radio" name="type_isaccount" class="radio" value="5">取消订单</label>'+
+									'<span class="prompt_error hide">必填</span>'+
 								'</div>'+
 							'</div>'+
-							'<div class="control_group">'+
+							'<div class="control_group" id="basicprice_wrap">'+
 								'<div class="control_label">成本：</div>'+
-								'<div class="control_content fs_14"><input type="text" value="" class="ipt w100">&nbsp;元</div>'+
+								'<div class="control_content fs_14"><input type="text" class="ipt w100" id="basicprice">&nbsp;元</div>'+
+								'<span class="prompt_error hide">必填</span>'+
 							'</div>'+
 							'<div class="control_group">'+
 								'<div class="control_label">备注：</div>'+
@@ -215,8 +219,16 @@ $(".dialog_handle_btn").click(function(){
 		fixed : false
 	});
 });
-//对订单弹窗的操作绑定radio
 
+//对订单弹窗的操作绑定radio
+$("body").on("click", "input[name='type_isaccount']", function(){
+	var _val = $(this).val();
+	if(_val == 3){
+		$("#basicprice_wrap").show();
+	}else if(_val == 5){
+		$("#basicprice_wrap").hide();
+	}
+});
 
 //操作入账弹窗
 $(".dialog_account_btn").click(function(){
@@ -229,6 +241,25 @@ $(".dialog_account_btn").click(function(){
 		},
 		fixed : false
 	});
+});
+
+
+$("#tijiao").click(function(){
+	var $radio = $("input[name='type_isaccount']");
+	var isradio = $radio[0].checked || $radio[1].checked ? true : false;
+	var $basicprice = $("#basicprice");
+	var isnum = /^[1-9]\d*$|^[1-9]\d*\.\d{1,2}$|^0\.\d{1,2}$|^0$/.test($basicprice.val()) ? true : false;
+	
+	if(!isradio){
+		$("#radio_label_wrap").children(".prompt_error").removeClass("hide");
+	}else{
+		$("#radio_label_wrap").children(".prompt_error").addClass("hide");
+	}
+	if(!isnum){
+		$("#basicprice_wrap").find(".prompt_error").removeClass("hide");
+	}else{
+		$("#basicprice_wrap").find(".prompt_error").addClass("hide");
+	}
 });
 
 </script>

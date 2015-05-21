@@ -7,7 +7,7 @@ img{ border:0}
 h1,h2,h3,h4,h5,h6{ font-size:100%; font-weight:normal}
 button,input,select,textarea{ font-size:100%; vertical-align:baseline; *vertical-align:middle}
 ol,ul{ list-style:none}
-textarea{ overflow:auto; vertical-align:top; resize:vertical}
+textarea{ overflow:auto; resize:vertical}
 table{ border-collapse:collapse; border-spacing:0}
 em,i,code,cite,address,th{font-style:normal}
 .clear{clear:both;line-height:0;font-size:0}
@@ -29,7 +29,7 @@ a{ text-decoration:none; outline:none}
 .alert{ color:#c09853; padding:8px 35px 8px 14px; margin-bottom:15px; text-shadow:0 1px rgba(255,255,255,0.5); background:#fcf8e3; border:1px solid #fbeed5}
 .alert_error{ color:#b94a48; background:#f2dede; border-color:#eed3d7}
 /*隐藏*/
-.hide{ display:none}
+.hide{ display:none !important}
 /*翻页*/
 .paging{ margin-top:6px}
 .paging .page_size{ float:left; margin-top:4px}
@@ -59,8 +59,11 @@ a{ text-decoration:none; outline:none}
 .radio_label{ margin-right:15px; font-size:14px}
 .radio_label .radio{ vertical-align:-2px; margin-right:2px}
 .ipt,.textarea{ color:#333; height:20px; padding:4px 6px; line-height:20px; font-size:14px; border:1px solid #e5e5e5}
-.textarea{ height:auto}
-
+.textarea{ height:auto; vertical-align:-3px}
+.prompt_help{ font-size:12px; color:#aaa; margin-left:5px}
+.prompt_error,.prompt_ok{ height:14px; line-height:14px; margin-left:5px; background:url(../images/icon.png) -28px 0 no-repeat; display:inline-block; padding-left:14px; color:#cc0000}
+.prompt_ok{ background-position:-28px -28px; color:#3c3}
+.control_content.error .prompt_error{ display:inline-block}
 
 
 
