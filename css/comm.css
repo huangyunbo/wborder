@@ -1,7 +1,7 @@
 @charset "utf-8";
 /* 2015-05-19 Diaosi */
 
-body,ul,ol,li,h1,h2,h3,h4,h5,h6,p,pre,code,form,dl,dd,dt,input,textarea,button,th,td,iframe{ margin:0; padding:0}
+body,ul,ol,li,h1,h2,h3,h4,h5,h6,p,pre,code,form,dl,dd,dt,input,textarea,button,select,th,td,iframe{ margin:0; padding:0}
 html{ font:12px/1.5 tahoma, arial, \5b8b\4f53, sans-serif}
 img{ border:0}
 h1,h2,h3,h4,h5,h6{ font-size:100%; font-weight:normal}
@@ -19,9 +19,9 @@ a{ text-decoration:none; outline:none}
 .w100{ width:100px}
 .w200{ width:200px}
 /*按钮*/
-.btn{ border:0; padding:7px 14px; font-size:14px; cursor:pointer; outline:none; -webkit-appearance:none}
-.btn_green{ background:#35aa47; color:#fff}
-.btn_green:hover,.btn_green:active{ background:#1d943b}
+.btn{ padding:2px 7px; padding:0 7px\0; cursor:pointer}
+.btn_green{ background:#35aa47; padding:4px 14px; color:#fff; border:0; outline:none; -webkit-appearance:none}
+.btn_green:hover{ background:#1d943b}
 /*颜色*/
 .col_red{ color:#ff0000}
 .col_green{ color:#3cc051}
@@ -58,16 +58,17 @@ a{ text-decoration:none; outline:none}
 .control_content{ margin-left:170px}
 .radio_label{ margin-right:15px; font-size:14px}
 .radio_label .radio{ vertical-align:-2px; margin-right:2px}
-.ipt,.textarea{ color:#333; height:20px; padding:4px 6px; line-height:20px; font-size:14px; border:1px solid #e5e5e5}
+.ipt,.textarea{ color:#333; padding:4px 6px; height:20px; line-height:20px; font-size:14px; border:1px solid #e5e5e5}
 .textarea{ height:auto; vertical-align:-3px}
+.select{ padding:2px; padding:1px\0}
 .prompt_help{ font-size:12px; color:#aaa; margin-left:5px}
 .prompt_error,.prompt_ok{ height:14px; line-height:14px; margin-left:5px; background:url(../images/icon.png) -28px 0 no-repeat; display:inline-block; padding-left:14px; color:#cc0000}
 .prompt_ok{ background-position:-28px -28px; color:#3c3}
 .control_content.error .prompt_error{ display:inline-block}
-
-
-
-
+/*表单顶部*/
+.table_filter{ background:#ebebeb; padding-left:10px; border-top:1px solid #ddd}
+.table_filter .query_item{ float:left; margin-right:20px; padding:3px 0 2px}
+.table_filter .query_item .query_ipt{ padding:0 2px; height:18px; line-height:18px; color:#333}
 
 
 

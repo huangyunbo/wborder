@@ -7,6 +7,6 @@ body{ background:#444}
 .login_box h3{ font-size:20px; margin-bottom:20px; font-family:"Microsoft YaHei"; color:#333}
 .login_box .field{ padding:10px 0; position:relative}
 .login_text{ width:265px; height:20px; line-height:20px; padding:3px; padding-left:30px; border:1px solid #dedede}
-.login_box .btn_green{ width:300px; border-radius:3px}
+.login_box .btn_green{ width:300px; border-radius:3px; font-size:14px; padding:7px 0}
 .login_box .icon_username,.login_box .icon_pwd{ width:15px; height:15px; background:url(../images/icon_login.png) no-repeat; position:absolute; left:7px; top:16px}
 .login_box .icon_pwd{ background-position:0 -15px}
