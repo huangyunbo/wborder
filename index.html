@@ -186,12 +186,12 @@
 
 <script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>
 <script type="text/javascript" src="js/common.js"></script>
-<script type="text/javascript" src="js/easydialog.min.js"></script>
+<script type="text/javascript" src="js/easydialog.js"></script>
 <script type="text/javascript">
 function callpage(x,y){
-	console.log("跳"+x+"页，总共"+y+"页");
+	console.log("跳第"+x+"页，每页显示"+y+"条");
 }
-$.webpage({"id":"paging","pagecurrent":17,"totalrows":200,"pagesize":10,"callback":"callpage"});
+$.webpage({id:"paging",pagecurrent:17,totalrows:200,pagesize:10,callback:callpage});
 
 function btnFn(){
 	console.log("btnFn");
@@ -293,6 +293,10 @@ $("#tijiao").click(function(){
 		$("#basicprice_wrap").find(".prompt_error").addClass("hide");
 	}
 });
+
+
+
+
 
 </script>
 </body>

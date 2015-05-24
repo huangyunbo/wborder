@@ -7,7 +7,7 @@
 
 $.extend({
 	webpage: function() {
-		//$.webpage({"id":"paging","pagecurrent":1,"totalrows":100,"pagesize":10,"callback":"abc"});
+		//$.webpage({id:"paging",pagecurrent:17,totalrows:200,pagesize:10,callback:callpage});
 		
 		var o = arguments[0];
 		if(o.totalrows == 0){//如果等于0就不执行
@@ -104,29 +104,18 @@ $.extend({
 		$("#" + o.id).children(".page_number").on("click", "a.n,a.page_prev,a.page_next", function () {
 			var _page = parseInt($(this).attr("data-page"));
 			if (isNaN(_page)) return;
-			eval(o.callback + "(" + _page + "," + o.pagesize + ")");
+			if(typeof o.callback === "function"){
+				o.callback(_page, o.pagesize);
+			}
 		});
-		//改变每页大小
+		//改变每页大小回调
 		$("#" + o.id).children(".page_size").on("change", "select", function () {
 			var _val = parseInt($(this).children("option:selected").val());
 			if (isNaN(_val)) return;
 			var _newpagecurrent = Math.ceil((o.pagecurrent * o.pagesize - o.pagesize + 1) / _val); //重新计算当前页
-			eval(o.callback + "(" + _newpagecurrent + "," + _val + ")");
-		});
-		//跳指定页
-		$("#" + o.id).children(".page_number").on("keyup", "input.text", function (e) {
-			var _val = parseInt($(this).val());
-			if (isNaN(_val)) return;
-			if (_val < 1 || _val > totalpage) return;
-			if (e.keyCode == 13) {
-				eval(o.callback + "(" + _val + "," + o.pagesize + ")");
+			if(typeof o.callback === "function"){
+				o.callback(_newpagecurrent, _val);
 			}
-		});
-		$("#" + o.id).children(".page_number").on("click", ".page_btn", function () {
-			var _val = parseInt($(this).siblings("input.text").val());
-			if (isNaN(_val)) return;
-			if (_val < 1 || _val > totalpage) return;
-			eval(o.callback + "(" + _val + "," + o.pagesize + ")");
 		});
 	}
 });
