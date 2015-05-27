@@ -1,21 +1,21 @@
 @charset "utf-8";
 /* 2015-05-19 Diaosi */
 
-body{ padding:20px}
+
 .bought_table{ width:100%; table-layout:fixed; color:#3c3c3c}
 .bought_table a{ color:#3c3c3c}
 .bought_table a:hover{ color:#f60}
 .bought_table thead{ background:#4b8df8; color:#fff; border:1px solid #09f; border-bottom:0}
 .bought_table thead th{ height:38px}
 .bought_table .bought_hd td{ background:#f5f5f5; border:1px solid #e8e8e8; border-bottom:0; height:30px; padding-left:10px}
-.bought_table .bought_bd .td{ border:1px solid #e8e8e8; border-top:0; padding:7px 5px}
-.bought_table .baobei{ width:340px; box-sizing:border-box}
+.bought_table .bought_bd .td{ border:1px solid #e8e8e8; border-top:0; padding:3px 5px 6px}
+.bought_table .baobei{ width:320px; box-sizing:border-box}
 .bought_table .price{ width:80px; text-align:center}
 .bought_table .quantity{ width:60px; text-align:center}
 .bought_table .amount{ width:80px; text-align:center}
 .bought_table .trade_status{ width:100px; text-align:center}
 .bought_table .trade_operate{ width:100px; text-align:center}
-.bought_table .remarks{ width:200px}
+.bought_table .remarks{ width:180px}
 .bought_table .bought_bd .baobei{ padding-left:10px; vertical-align:top}
 .bought_table .bought_bd .remarks{ vertical-align:top; color:#9c9c9c}
 .baodetail{ width:100%; color:#9c9c9c}

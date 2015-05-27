@@ -14,7 +14,37 @@ em,i,code,cite,address,th{font-style:normal}
 .clearfix{*zoom:1;_height:1px}
 .clearfix:after{content:".";display:block;height:0;clear:both;visibility:hidden}
 a{ text-decoration:none; outline:none}
+a:hover{ text-decoration:underline}
 
+.container{ background:url(../images/aside_bg.gif) repeat-y; min-width:1000px}
+.header{ height:50px; background:#fff; border-bottom:1px solid #aec0d8; box-shadow:-2px 0 2px #aec0d8; margin-bottom:10px; position:relative}
+.logo{ width:73px; height:40px; background:url(../images/logo.png) no-repeat; position:absolute; left:10px; top:7px}
+.navbar{ font-family:"Microsoft yahei", sans-serif; font-size:18px; position:absolute; bottom:0; left:150px}
+.navbar li{ float:left; margin:0 20px 0 0}
+.navbar a{ color:#000}
+.navbar li.on{ background:#37424e; border-radius:5px 5px 0 0; padding:1px 15px}
+.navbar li.on a{color:#fff}
+.navright{ float:right; padding-top:12px}
+.navright .userhead{ width:30px; height:30px; background:url(../images/icon.png) 0 -56px; float:left}
+.navright .username{ float:left; margin:8px 10px 0}
+.navright .quit{ float:left; margin:8px 20px 0; color:#000}
+.aside{ width:150px; position:absolute; color:#aec0d8; left:0}
+.aside a{ color:#aec0d8}
+.aside .item{ position:relative}
+.aside .item ul{ display:none}
+.aside .item.open ul{ display:block}
+.aside .item .title{ padding-left:20px; margin:7px 0}
+.aside .item li{ margin:2px 0}
+.aside .item li a{ display:block; padding:5px 0 5px 30px}
+.aside .item li a:hover{ background:#2d363f; color:#fff}
+.aside .item li.on{ border-left:2px solid #42a4ff; padding-left:8px}
+.aside .item li.on a{ background:#2d363f; color:#fff; padding-left:20px}
+.aside .item.open .icon_tri,.aside .item.open .icon_tri i{ position:absolute; width:0; height:0; top:8px; *top:4px; right:7px; border-width:6px; border-style:solid dashed dashed dashed; border-color:#aec0d8 transparent transparent transparent}
+.aside .item.open .icon_tri i{ top:-7px; left:-6px; border-color:#37424e transparent transparent transparent}
+.aside .item .icon_tri,.aside .item .icon_tri i{ position:absolute; width:0; height:0; top:4px; *top:0; right:7px; border-width:6px; border-style:dashed solid dashed dashed; border-color:transparent #aec0d8 transparent transparent}
+.aside .item .icon_tri i{ top:-6px; left:-5px; border-color:transparent #37424e transparent transparent}
+.main{ margin-left:160px}
+/*通用*/
 .fs_14{ font-size:14px}
 .w100{ width:100px}
 .w200{ width:200px}
@@ -70,8 +100,9 @@ a{ text-decoration:none; outline:none}
 .table_filter{ background:#ebebeb; padding-left:10px; border-top:1px solid #ddd}
 .table_filter .query_item{ float:left; margin-right:20px; padding:3px 0 2px}
 .table_filter .query_item .query_ipt{ padding:0 2px; height:18px; line-height:18px; color:#333}
+.table_filter .query_item:last-child{ margin-right:0}
 
-
+.mr_0{ margin-right:0}
 
 
 

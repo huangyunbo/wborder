@@ -7,186 +7,227 @@
 <link href="css/operate.css" rel="stylesheet" type="text/css">
 </head>
 
-<body>
-<div class="table_filter clearfix">
-	<div class="query_item">
-    	<label>订单号：</label>
-        <input type="text" placeholder="请输入..." class="query_ipt">
+<body class="container">
+<div class="header">
+	<a class="logo" href="index.html"></a>
+    <div class="navbar">
+    	<ul>
+        	<li class="on"><a href="index.html">运营</a></li>
+            <li><a href="index.html">财务</a></li>
+        </ul>
     </div>
-    <div class="query_item">
-    	<label>订单状态：</label>
-        <select class="select">
-        	<option>待付款</option>
-            <option>付款成功</option>
-        </select>
-    </div>
-    <div class="query_item">
-    	<label>处理人：</label>
-        <input type="text" class="query_ipt w100">
-    </div>
-    <div class="query_item">
-    	<label>处理时间：</label>
-        <input type="text" class="query_ipt w100">
-        至
-        <input type="text" class="query_ipt w100">
-    </div>
-    <div class="query_item">
-    	<button class="btn_normal">查询</button>
-        &nbsp;
-        <button class="btn_normal">导出excel</button>
+    <div class="navright">
+    	<div class="userhead"></div>
+        <div class="username">胡一哥哥</div>
+        <a href="login.html" class="quit">退出</a>
     </div>
 </div>
 
-<table class="bought_table">
-	<thead>
-    	<tr>
-            <th class="baobei">宝贝</th>
-            <th class="price">单价(元)</th>
-            <th class="quantity">数量</th>
-            <th class="amount">实付款(元)</th>
-            <th class="trade_status">交易状态^</th>
-            <th class="trade_operate">交易操作</th>
-            <th class="remarks">备注</td>
-        </tr>
-    </thead>
-    <tbody>
-    	<tr class="bought_hd">
-			<td colspan="7">
-            	2015-05-19 13:15:03&nbsp;&nbsp;订单号：8287702A1432012503728056
-            </td>
-        </tr>
-    	<tr class="bought_bd">
-            <td class="td baobei">
-            	<table class="baodetail">
-                	<tr>
-                    	<td class="baodetail_1" colspan="2">海岛奇兵 iOS正版充值328元6500钻石（需关联）</td>
-                    </tr>
-                    <tr>
-                    	<td class="baodetail_2_1">
-                        	<div>区服：iOS</div>
-                            <div>角色：skq1016</div>
-                            <div>账户：skq1017@icloud.com222222222222222222222222222222</div>
-                            <div>密码：Jiamengxiao55</div>
-                        </td>
-                        <td class="baodetail_2_2">
-                        	<div>类型：游戏账号</div>
-                        	<div>手机：13260073625</div>
-                    		<div>QQ：736855039</div>
-                        </td>
-                    </tr>
-                </table>
-            </td>
-            <td class="td price">250</td>
-            <td class="td quantity">1</td>
-            <td class="td amount">250</td>
-            <td class="td trade_status col_green">付款成功</td>
-            <td class="td trade_operate"><a href="javascript:;" class="dialog_handle_btn">处理订单</a></td>
-            <td class="td remarks">
-            	<div>成本：20元</div>
-                <div>处理：doris，05-19 13:15，这是备注</div>
-                <div>入账：lily，05-19 13:15，这是备注</div>
-            </td>
-        </tr>
-    </tbody>
-    <tbody>
-    	<tr class="bought_hd">
-			<td colspan="7">
-            	2015-05-19 13:15:03&nbsp;&nbsp;订单号：8287702A1432012503728056
-            </td>
-        </tr>
-    	<tr class="bought_bd">
-            <td class="td baobei">
-            	<table class="baodetail">
-                	<tr>
-                    	<td class="baodetail_1" colspan="2">海岛奇兵 iOS正版充值328元6500钻石（需关联）</td>
-                    </tr>
-                    <tr>
-                    	<td class="baodetail_2_1">
-                        	<div>区服：iOS</div>
-                            <div>角色：skq1016</div>
-                            <div>账户：skq1017@icloud.com</div>
-                            <div>密码：Jiamengxiao55</div>
-                        </td>
-                        <td class="baodetail_2_2">
-                        	<div>类型：游戏账号</div>
-                        	<div>手机：13260073625</div>
-                    		<div>QQ：736855039</div>
-                        </td>
-                    </tr>
-                </table>
-            </td>
-            <td class="td price">250</td>
-            <td class="td quantity">1</td>
-            <td class="td amount">250</td>
-            <td class="td trade_status">已发货</td>
-            <td class="td trade_operate"><a href="javascript:;" class="dialog_account_btn">入账</a></td>
-            <td class="td remarks">
-            	<div>成本：20元</div>
-                <div>处理：doris，05-19 13:15，这是备注</div>
-                <div>入账：lily，05-19 13:15，这是备注</div>
-            </td>
-        </tr>
-    </tbody>
-</table>
-
-<!--<div class="paging clearfix">
-	<div class="page_size">
-    	每页显示：
-        <select>
-        	<option value="10" selected="selected">10</option>
-            <option value="20">20</option>
-            <option value="50">50</option>
-        </select>
-    </div>
-    <div class="page_number">
-    	<a href="javascript:;" data-page="1" class="n">上一页</a>
-    	<a href="javascript:;" data-page="1" class="n selected">1</a>
-        <a href="javascript:;" data-page="2" class="n ">2</a>
-        <a href="javascript:;" data-page="3" class="n">3</a>
-        <a href="javascript:;" data-page="4" class="n">4</a>
-        <a href="javascript:;" data-page="5" class="n">5</a>
-        <a href="javascript:;" data-page="5" class="n dot">...</a>
-        <a href="javascript:;" data-page="25" class="n">25</a>
-        <a href="javascript:;" data-page="2" class="n">下一页</a>
-    </div>
-</div>-->
-<div class="paging clearfix" id="paging"></div>
-
-
-<div class="dialog_handle">
-    <div class="control_group">
-        <div class="control_label">宝贝：</div>
-        <div class="control_content fs_14">海岛奇兵 iOS正版充值328元6500钻石（需关联）</div>
-    </div>
-    <div class="control_group">
-        <div class="control_label">订单：</div>
-        <div class="control_content fs_14">8363057A1432007309297653</div>
-    </div>
-    <div class="control_group">
-        <div class="control_label">操作：</div>
-        <div class="control_content" id="radio_label_wrap">
-        	<label class="radio_label"><input type="radio" name="type_isaccount" class="radio" value="3">发货</label>
-            <label class="radio_label"><input type="radio" name="type_isaccount" class="radio" value="5">取消订单</label>
-            <span class="prompt_error hide">必填</span>
+<div class="body clearfix">
+	<div class="aside">
+    	<div class="item open">
+        	<div class="title">商城<i class="icon_tri"><i></i></i></div>
+        	<ul>
+            	<li class="on"><a href="index.html" class="a">ios充值订单</a></li>
+                <li><a href="index.html" class="a">ios充值订单</a></li>
+                <li><a href="index.html" class="a">ios充值订单</a></li>
+            </ul>
         </div>
-    </div>
-    <div class="control_group" id="basicprice_wrap">
-        <div class="control_label">成本：</div>
-        <div class="control_content"><input type="text" value="" class="ipt w100" id="basicprice">&nbsp;<span class="fs_14">元</span><span class="prompt_error hide">必填</span></div>
-    </div>
-    <div class="control_group">
-        <div class="control_label">备注：</div>
-        <div class="control_content"><textarea class="textarea w200" rows="3"></textarea></div>
-    </div>
-</div>
-<button id="tijiao" class="btn btn_grey">提交</button>
-<button class="btn btn_green">提交</button>
-<button class="btn btn_blue">提交</button>
-<button class="btn_normal">提交</button>
+        <div class="item">
+        	<div class="title">商城<i class="icon_tri"><i></i></i></div>
+        	<ul>
+            	<li><a href="index.html" class="a">ios充值订单</a></li>
+                <li><a href="index.html" class="a">ios充值订单</a></li>
+                <li><a href="index.html" class="a">ios充值订单</a></li>
+            </ul>
+        </div>
+    </div><!--/aside-->
+    
+    <div class="main">
+    	<div class="table_filter clearfix">
+            <div class="query_item">
+                <label>订单号：</label>
+                <input type="text" placeholder="请输入..." class="query_ipt">
+            </div>
+            <div class="query_item">
+                <label>订单状态：</label>
+                <select class="select">
+                    <option>待付款</option>
+                    <option>付款成功</option>
+                </select>
+            </div>
+            <div class="query_item">
+                <label>处理人：</label>
+                <input type="text" class="query_ipt w100">
+            </div>
+            <div class="query_item">
+                <label>处理时间：</label>
+                <input type="text" class="query_ipt w100">
+                至
+                <input type="text" class="query_ipt w100">
+            </div>
+            <div class="query_item">
+                <button class="btn_normal">查询</button>
+                &nbsp;
+                <button class="btn_normal">导出excel</button>
+            </div>
+        </div>
+        
+        <table class="bought_table">
+            <thead>
+                <tr>
+                    <th class="baobei">宝贝</th>
+                    <th class="price">单价(元)</th>
+                    <th class="quantity">数量</th>
+                    <th class="amount">实付款(元)</th>
+                    <th class="trade_status">交易状态^</th>
+                    <th class="trade_operate">交易操作</th>
+                    <th class="remarks">备注</td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="bought_hd">
+                    <td colspan="7">
+                        2015-05-19 13:15:03&nbsp;&nbsp;订单号：8287702A1432012503728056
+                    </td>
+                </tr>
+                <tr class="bought_bd">
+                    <td class="td baobei">
+                        <table class="baodetail">
+                            <tr>
+                                <td class="baodetail_1" colspan="2">海岛奇兵 iOS正版充值328元6500钻石（需关联）</td>
+                            </tr>
+                            <tr>
+                                <td class="baodetail_2_1">
+                                    <div>区服：iOS</div>
+                                    <div>角色：skq1016</div>
+                                    <div>账户：skq1017@icloud.com222222222222222222222222222222</div>
+                                    <div>密码：Jiamengxiao55</div>
+                                </td>
+                                <td class="baodetail_2_2">
+                                    <div>类型：游戏账号</div>
+                                    <div>手机：13260073625</div>
+                                    <div>QQ：736855039</div>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                    <td class="td price">250</td>
+                    <td class="td quantity">1</td>
+                    <td class="td amount">250</td>
+                    <td class="td trade_status col_green">付款成功</td>
+                    <td class="td trade_operate"><a href="javascript:;" class="dialog_handle_btn">处理订单</a></td>
+                    <td class="td remarks">
+                        <div>成本：20元</div>
+                        <div>处理：doris，05-19 13:15，这是备注</div>
+                        <div>入账：lily，05-19 13:15，这是备注</div>
+                    </td>
+                </tr>
+            </tbody>
+            <tbody>
+                <tr class="bought_hd">
+                    <td colspan="7">
+                        2015-05-19 13:15:03&nbsp;&nbsp;订单号：8287702A1432012503728056
+                    </td>
+                </tr>
+                <tr class="bought_bd">
+                    <td class="td baobei">
+                        <table class="baodetail">
+                            <tr>
+                                <td class="baodetail_1" colspan="2">海岛奇兵 iOS正版充值328元6500钻石（需关联）</td>
+                            </tr>
+                            <tr>
+                                <td class="baodetail_2_1">
+                                    <div>区服：iOS</div>
+                                    <div>角色：skq1016</div>
+                                    <div>账户：skq1017@icloud.com</div>
+                                    <div>密码：Jiamengxiao55</div>
+                                </td>
+                                <td class="baodetail_2_2">
+                                    <div>类型：游戏账号</div>
+                                    <div>手机：13260073625</div>
+                                    <div>QQ：736855039</div>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                    <td class="td price">250</td>
+                    <td class="td quantity">1</td>
+                    <td class="td amount">250</td>
+                    <td class="td trade_status">已发货</td>
+                    <td class="td trade_operate"><a href="javascript:;" class="dialog_account_btn">入账</a></td>
+                    <td class="td remarks">
+                        <div>成本：20元</div>
+                        <div>处理：doris，05-19 13:15，这是备注</div>
+                        <div>入账：lily，05-19 13:15，这是备注</div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        
+        <!--<div class="paging clearfix">
+            <div class="page_size">
+                每页显示：
+                <select>
+                    <option value="10" selected="selected">10</option>
+                    <option value="20">20</option>
+                    <option value="50">50</option>
+                </select>
+            </div>
+            <div class="page_number">
+                <a href="javascript:;" data-page="1" class="n">上一页</a>
+                <a href="javascript:;" data-page="1" class="n selected">1</a>
+                <a href="javascript:;" data-page="2" class="n ">2</a>
+                <a href="javascript:;" data-page="3" class="n">3</a>
+                <a href="javascript:;" data-page="4" class="n">4</a>
+                <a href="javascript:;" data-page="5" class="n">5</a>
+                <a href="javascript:;" data-page="5" class="n dot">...</a>
+                <a href="javascript:;" data-page="25" class="n">25</a>
+                <a href="javascript:;" data-page="2" class="n">下一页</a>
+            </div>
+        </div>-->
+        <div class="paging clearfix" id="paging"></div>
+        
+        
+        <!--<div class="dialog_handle">
+            <div class="control_group">
+                <div class="control_label">宝贝：</div>
+                <div class="control_content fs_14">海岛奇兵 iOS正版充值328元6500钻石（需关联）</div>
+            </div>
+            <div class="control_group">
+                <div class="control_label">订单：</div>
+                <div class="control_content fs_14">8363057A1432007309297653</div>
+            </div>
+            <div class="control_group">
+                <div class="control_label">操作：</div>
+                <div class="control_content" id="radio_label_wrap">
+                    <label class="radio_label"><input type="radio" name="type_isaccount" class="radio" value="3">发货</label>
+                    <label class="radio_label mr_0"><input type="radio" name="type_isaccount" class="radio" value="5">取消订单</label>
+                    <span class="prompt_error hide">必填</span>
+                </div>
+            </div>
+            <div class="control_group" id="basicprice_wrap">
+                <div class="control_label">成本：</div>
+                <div class="control_content"><input type="text" value="" class="ipt w100" id="basicprice">&nbsp;<span class="fs_14">元</span><span class="prompt_error hide">必填</span></div>
+            </div>
+            <div class="control_group">
+                <div class="control_label">备注：</div>
+                <div class="control_content"><textarea class="textarea w200" rows="3"></textarea></div>
+            </div>
+        </div>-->
+        <button class="btn btn_grey">提交</button>
+        <button class="btn btn_green">提交</button>
+        <button class="btn btn_blue">提交</button>
+        <button class="btn_normal">提交</button>
+    </div><!--/main-->
+</div><!--/body-->
+
+
+
 
 <script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>
 <script type="text/javascript" src="js/common.js"></script>
-<script type="text/javascript" src="js/easydialog.js"></script>
+<script type="text/javascript" src="js/easydialog.min.js"></script>
 <script type="text/javascript">
 function callpage(x,y){
 	console.log("跳第"+x+"页，每页显示"+y+"条");
@@ -194,7 +235,8 @@ function callpage(x,y){
 $.webpage({id:"paging",pagecurrent:17,totalrows:200,pagesize:10,callback:callpage});
 
 function btnFn(){
-	console.log("btnFn");
+	console.log(this);
+	return false;
 }
 
 var dialog_handle_html = '<div class="dialog_handle">'+
@@ -210,7 +252,7 @@ var dialog_handle_html = '<div class="dialog_handle">'+
 								'<div class="control_label">操作：</div>'+
 								'<div class="control_content" id="radio_label_wrap">'+
 									'<label class="radio_label"><input type="radio" name="type_isaccount" class="radio" value="3">发货</label>'+
-									'<label class="radio_label"><input type="radio" name="type_isaccount" class="radio" value="5">取消订单</label>'+
+									'<label class="radio_label mr_0"><input type="radio" name="type_isaccount" class="radio" value="5">取消订单</label>'+
 									'<span class="prompt_error hide">必填</span>'+
 								'</div>'+
 							'</div>'+
@@ -239,12 +281,26 @@ var dialog_account_html = '<div class="dialog_handle">'+
 								'<div class="control_content"><textarea class="textarea w200" rows="3"></textarea></div>'+
 							'</div>'+
 						'</div>';
+
 //操作处理订单弹窗
 $(".dialog_handle_btn").click(function(){
 	easyDialog.open({
 		container : {
 			header : '处理订单',
 			content : dialog_handle_html,
+			yesFn : btnFn,
+			noFn : true
+		},
+		fixed : false
+	});
+});
+
+//操作入账弹窗
+$(".dialog_account_btn").click(function(){
+	easyDialog.open({
+		container : {
+			header : '入账',
+			content : dialog_account_html,
 			yesFn : btnFn,
 			noFn : true
 		},
@@ -262,21 +318,10 @@ $("body").on("click", "input[name='type_isaccount']", function(){
 	}
 });
 
-//操作入账弹窗
-$(".dialog_account_btn").click(function(){
-	easyDialog.open({
-		container : {
-			header : '入账',
-			content : dialog_account_html,
-			yesFn : btnFn,
-			noFn : true
-		},
-		fixed : false
-	});
-});
 
 
-$("#tijiao").click(function(){
+//操作处理订单弹窗提交的验证
+/*$("#tijiao").click(function(){
 	var $radio = $("input[name='type_isaccount']");
 	var isradio = $radio[0].checked || $radio[1].checked ? true : false;
 	var $basicprice = $("#basicprice");
@@ -293,6 +338,9 @@ $("#tijiao").click(function(){
 		$("#basicprice_wrap").find(".prompt_error").addClass("hide");
 	}
 });
+$("input[name='type_isaccount']").on("click", function(){
+	$("#radio_label_wrap").children(".prompt_error").addClass("hide");
+});*/
 
 
 
