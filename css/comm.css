@@ -35,9 +35,9 @@ a:hover{ text-decoration:underline}
 .aside .item.open ul{ display:block}
 .aside .item .title{ padding-left:20px; margin:7px 0}
 .aside .item li{ margin:2px 0}
-.aside .item li a{ display:block; padding:5px 0 5px 30px}
+.aside .item li a{ display:block; padding:5px 0 5px 32px}
 .aside .item li a:hover{ background:#2d363f; color:#fff}
-.aside .item li.on{ border-left:2px solid #42a4ff; padding-left:8px}
+.aside .item li.on{ border-left:4px solid #42a4ff; padding-left:8px}
 .aside .item li.on a{ background:#2d363f; color:#fff; padding-left:20px}
 .aside .item.open .icon_tri,.aside .item.open .icon_tri i{ position:absolute; width:0; height:0; top:8px; *top:4px; right:7px; border-width:6px; border-style:solid dashed dashed dashed; border-color:#aec0d8 transparent transparent transparent}
 .aside .item.open .icon_tri i{ top:-7px; left:-6px; border-color:#37424e transparent transparent transparent}
