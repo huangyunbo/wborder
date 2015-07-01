@@ -44,10 +44,6 @@ a:hover{ text-decoration:underline}
 .aside .item .icon_tri,.aside .item .icon_tri i{ position:absolute; width:0; height:0; top:4px; *top:0; right:7px; border-width:6px; border-style:dashed solid dashed dashed; border-color:transparent #aec0d8 transparent transparent}
 .aside .item .icon_tri i{ top:-6px; left:-5px; border-color:transparent #37424e transparent transparent}
 .main{ margin-left:160px}
-/*通用*/
-.fs_14{ font-size:14px}
-.w100{ width:100px}
-.w200{ width:200px}
 /*按钮*/
 .btn_normal{ padding:2px 7px; padding:0 7px\0; cursor:pointer}
 .btn{ padding:6px 14px; color:#fff; border:1px solid; outline:none; border-radius:2px; -webkit-appearance:none; cursor:pointer}
@@ -101,8 +97,23 @@ a:hover{ text-decoration:underline}
 .table_filter .query_item{ float:left; margin-right:20px; padding:3px 0 2px}
 .table_filter .query_item .query_ipt{ padding:0 2px; height:18px; line-height:18px; color:#333}
 .table_filter .query_item:last-child{ margin-right:0}
-
+/*通用表格*/
+.table{ width:100%; font-size:12px}
+.table_thead{ background:#f9f9f9; border:solid #e3e3e3; border-width:1px 0}
+.table_thead th{ *border:solid #e3e3e3; *border-width:1px 0; color:#888; padding:4px 0 5px; white-space:nowrap}
+.table .tr{ border-bottom:1px solid #e3e3e3}
+.table .tr.no{ border:none}
+.table .tr:hover{ background:#f9f9f9}
+.table .td{ *border-bottom:1px solid #e3e3e3; padding:5px 0}
+.table .tr.no .td{ border:none; padding:3px}
+.table_layout_1 .table_thead th{ text-align:left; padding-left:10px; vertical-align:top}
+.table_layout_1 .td{ padding-left:10px; vertical-align:top}
+/*通用*/
+.fs_14{ font-size:14px}
+.w100{ width:100px}
+.w200{ width:200px}
 .mr_0{ margin-right:0}
+
 
 
 

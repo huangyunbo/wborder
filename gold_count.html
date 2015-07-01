@@ -1,0 +1,86 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>财务统计</title>
+<link href="css/comm.css" rel="stylesheet" type="text/css">
+</head>
+
+<body class="container">
+<div class="header">
+	<a class="logo" href="index.html"></a>
+    <div class="navbar">
+    	<ul>
+        	<li class="on"><a href="index.html">运营</a></li>
+            <li><a href="index.html">财务</a></li>
+        </ul>
+    </div>
+    <div class="navright">
+    	<div class="userhead"></div>
+        <div class="username">胡一哥哥</div>
+        <a href="login.html" class="quit">退出</a>
+    </div>
+</div>
+
+<div class="body clearfix">
+	<div class="aside">
+    	<div class="item open">
+        	<div class="title">商城<i class="icon_tri"><i></i></i></div>
+        	<ul>
+            	<li class="on"><a href="index.html" class="a">ios充值订单</a></li>
+                <li><a href="index.html" class="a">ios充值订单</a></li>
+                <li><a href="index.html" class="a">ios充值订单</a></li>
+            </ul>
+        </div>
+        <div class="item">
+        	<div class="title">商城<i class="icon_tri"><i></i></i></div>
+        	<ul>
+            	<li><a href="index.html" class="a">ios充值订单</a></li>
+                <li><a href="index.html" class="a">ios充值订单</a></li>
+                <li><a href="index.html" class="a">ios充值订单</a></li>
+            </ul>
+        </div>
+    </div><!--/aside-->
+    
+    <div class="main">
+    	<div class="table_filter clearfix">
+            <div class="query_item">
+                <label>处理人：</label>
+                <input type="text" class="query_ipt w100">
+            </div>
+            <div class="query_item">
+                <label>处理时间：</label>
+                <input type="text" class="query_ipt w100">
+                至
+                <input type="text" class="query_ipt w100">
+            </div>
+            <div class="query_item">
+                <button class="btn_normal">查询</button>
+            </div>
+        </div>
+        
+        <table class="table table_layout_1">
+            <thead class="table_thead">
+                <tr>
+                	<th class="">处理人</th>
+                    <th class="">处理时间</th>
+                    <th class="">实付款(元)</th>
+                    <th class="">成本(元)</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="tr">
+                    <td class="td">胡一哥哥</td>
+                    <td class="td">2015-07-01 至 2015-07-20</td>
+                    <td class="td">8888</td>
+                    <td class="td">6666</td>
+                </tr>
+                <tr class="tr no">
+                    <td class="td" colspan="4">暂无</td>
+                </tr>
+            </tbody>
+        </table>
+    </div><!--/main-->
+</div><!--/body-->
+</body>
+</html>
