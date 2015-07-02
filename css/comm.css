@@ -48,7 +48,8 @@ a:hover{ text-decoration:underline}
 .btn_normal{ padding:2px 7px; padding:0 7px\0; cursor:pointer}
 .btn{ padding:6px 14px; color:#fff; border:1px solid; outline:none; border-radius:2px; -webkit-appearance:none; cursor:pointer}
 .btn_green{ background:#35aa47; border-color:#35aa47}
-.btn_grey{ border-color:#c3c3c3; color:#333; background:#ececec}
+.btn_grey{ border-color:#c3c3c3; color:#333 !important; background:#ececec}
+.btn_grey:hover{ text-decoration:none; color:#333 !important}
 .btn_blue{ border-color:#4787ed; color:#fff; background:#4787ed}
 /*颜色*/
 .col_red{ color:#ff0000}
