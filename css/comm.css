@@ -1,4 +1,4 @@
-@charset "utf-8";
+﻿@charset "utf-8";
 /* 2015-05-19 Diaosi */
 
 body,ul,ol,li,h1,h2,h3,h4,h5,h6,p,pre,code,form,dl,dd,dt,input,textarea,button,select,th,td,iframe{ margin:0; padding:0}
@@ -114,6 +114,7 @@ a:hover{ text-decoration:underline}
 .w100{ width:100px}
 .w200{ width:200px}
 .mr_0{ margin-right:0}
+.fw_bold{ font-weight:bold}
 
 
 
