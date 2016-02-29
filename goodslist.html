@@ -1,0 +1,191 @@
+﻿
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>
+    商品列表
+</title>
+    <link href="css/comm.css?2015070701" rel="stylesheet" type="text/css">
+    
+    <link href="css/operate.css?2015052701" rel="stylesheet" type="text/css">
+    <script src="js/easydialog.min.js" type="text/javascript"></script>
+
+    <script src="js/jquery-1.11.2.min.js"></script>
+    <script src="js/common.js"></script>
+</head>
+<body class="container">
+    <div class="header">
+	    <a class="logo"></a>
+
+        <div class="navright">
+    	    <div class="userhead"></div>
+            <div class="username">木匠</div>
+            <a href="/quit.aspx" class="quit" target="_self">退出</a>
+        </div>
+    </div>
+    <div class="body clearfix">
+        	<div class="aside">
+            
+                    <div class="item open">
+        	            <div class="title">商城<i class="icon_tri"><i></i></i></div>
+        	            <ul>
+            	            <li data-node="101"><a href="index.html" class="a">ios充值订单</a></li>
+                        </ul>
+                    </div>
+              
+                
+                    <div class="item open">
+        	            <div class="title">商城管理<i class="icon_tri"><i></i></i></div>
+        	            <ul>
+            	            <li data-node="301"><a href="goodslist.html" class="a">商品列表</a></li>
+                            
+            	            <li data-node="302"><a href="goodsdo.html" class="a">新增商品</a></li>
+                            
+                        </ul>
+                    </div>
+                
+        </div><!--/aside-->
+        <div class="main">
+            
+    <div class="table_filter clearfix">
+	    <div class="query_item">
+    	    <label>游戏：</label>
+            <select id="selGameId" class="select">
+                <option value="0">全部</option>
+        	    <option value="1">1 动动爆</option><option value="2">2 植物大战僵尸2</option><option value="3">3 天天酷跑</option><option value="5">5 时空猎人</option><option value="6">6 奶酪谷仓</option><option value="7">7 我叫MT</option><option value="8">8 神仙道</option><option value="10">10 永恒战士2</option><option value="12">12 部落战争</option><option value="13">13 天天飞车</option><option value="14">14 凡人修真</option><option value="15">15 风云天下</option><option value="17">17 保卫萝卜2</option><option value="18">18 节奏大师</option><option value="19">19 100种蠢蠢的死法</option><option value="22">22 王国保卫战</option><option value="25">25 鳄鱼小顽皮爱洗澡2</option><option value="26">26 大掌门</option><option value="27">27 割绳子2</option><option value="28">28 全民英雄</option><option value="30">30 苍穹之剑</option><option value="32">32 全民飞机大战</option><option value="33">33 神魔之塔</option><option value="34">34 啪啪三国</option><option value="35">35 吞月之狼</option><option value="36">36 天天逆战</option><option value="37">37 天天炫斗</option><option value="38">38 天天富翁</option><option value="39">39 城堡争霸</option><option value="40">40 雷霆战机</option><option value="41">41 放开那三国</option><option value="43">43 全民砰砰砰</option><option value="44">44 爱情公寓</option><option value="45">45 全民炫舞</option><option value="46">46 刀塔传奇</option><option value="47">47 全民小镇</option><option value="48">48 神之刃</option><option value="49">49 龙之守护</option><option value="50">50 战争总动员</option><option value="51">51 暗黑光年</option><option value="52">52 海岛奇兵</option><option value="53">53 全民精灵</option><option value="54">54 全民打怪兽</option><option value="56">56 天降-近卫英雄传</option><option value="57">57 糖果粉碎传奇</option><option value="58">58 仙剑奇侠传</option><option value="59">59 全民农场</option><option value="60">60 锁链战记</option><option value="61">61 血族</option><option value="64">64 忍者必须死2</option><option value="66">66 爆笑西游</option><option value="68">68 勇者前线</option><option value="69">69 怪物弹珠</option><option value="71">71 天天风之旅</option><option value="73">73 天天来战</option><option value="74">74 我叫MT2</option><option value="75">75 秦时明月2</option><option value="76">76 梦幻西游</option><option value="77">77 全民突击</option><option value="78">78 奇迹暖暖</option><option value="79">79 炉石传说</option><option value="81">81 全民奇迹</option><option value="82">82 我叫MT外传</option><option value="83">83 战舰少女</option><option value="84">84 天天传奇</option><option value="85">85 热血传奇</option><option value="86">86 保卫萝卜3</option><option value="88">88 折扣游戏</option><option value="89">89 手游挖掘机</option><option value="91">91 千娇百妹</option><option value="92">92 安卓代充</option><option value="93">93 九龙战</option><option value="94">94 拳皇98终极之战OL</option><option value="95">95 火影忍者</option><option value="96">96 愤怒的小鸟2</option><option value="97">97 纪念碑谷</option><option value="98">98 乖离性百万亚瑟王</option><option value="99">99 虚荣</option><option value="100">100 全民超神 </option>
+            </select>
+        </div>
+        <div class="query_item">
+    	    <label>商品类型：</label>
+            <select id="selGoodsType" class="select">
+                <option value="-1">全部</option>
+        	    <option value="0">商城商品</option>
+                <option value="1">玩吧蛋兑换</option>
+            </select>
+        </div>
+        <div class="query_item">
+    	    <label>平台：</label>
+            <select id="selDeviceType" class="select">
+                <option value="0">全部</option>
+        	    <option value="1">Android</option>
+                <option value="2">iOS</option>
+            </select>
+        </div>
+        <div class="query_item">
+    	    <label>状态：</label>
+            <select id="selStatus" class="select">
+                <option value="0">全部</option>
+        	    <option value="1">销售中</option>
+                <option value="2">未上架</option>
+                <option value="3">已下架</option>
+            </select>
+        </div>
+        <div class="query_item">
+    	    <button class="btn_normal" onclick="search(1, 10)">查询</button>
+        </div>
+    </div>
+    <table class="bought_table" id="datatable">
+	    <thead>
+    	    <tr>
+                <th class="baobei">宝贝</th>
+                <th class="price">原价/现价(元)</th>
+                <th class="desc">商品简介</th>
+                <th class="contact">联系信息</th>
+                <th class="trade_operate">管理</th>
+            </tr>
+        </thead>
+        <tbody id="txt"><tr class="bought_hd">    <td colspan="5">        有效期：2016-02-23&nbsp;至&nbsp;2016-03-01&nbsp;&nbsp;添加时间：2016-02-23 18:09:51&nbsp;&nbsp;库存信息：1/4    </td></tr><tr class="bought_bd">    <td class="td baobei">        <table class="baodetail">            <tbody><tr>                <td class="baodetail_1" colspan="2">智商充值卡 <strong>大甩卖</strong></td>            </tr>            <tr>                <td class="baodetail_2_1">                    <div>ID：18</div>                    <div>类别：玩吧蛋兑换</div>                    <div>图片名：zhi.jpg</div>                    <div>排序值：100</div>                </td>                <td class="baodetail_2_2">                    <div>游戏：--</div>                    <div>平台：全平台</div>                    <div>图片数量：1</div>                    <div>渠道信息：</div>                </td>            </tr>        </tbody></table>    </td>    <td class="td price">10000/99999</td>    <td class="td desc">声明：本商城物品兑换和苹果公司无关。
+图片仅供参考，以实物为准。 
+
+商品名称：联通20M流量包
+
+商品说明：兑换成功后，请及时联系客服，将需充值号码提供给客服即可。定期更新库存，请大家持续关注！ 
+
+玩吧蛋兑换规则说明：当你拥有商品标注的玩吧蛋数量时，即可点击下方“立即兑换”进行兑奖！ 本奖品为虚拟奖励，我们会按您提供的电话进行充值流量。 
+
+每天限量100M流量兑换，一人仅有一次兑换机会
+兑换成功之后请联系客服充值！
+
+【联系方式】QQ：800138854
+
+【工作时间】：
+周一~周五：9:00-21:00。
+周六、日：不定时在线</td>    <td class="td contact">110</td>    <td class="td trade_operate">            <button class="btn btn_grey dialog_handle_btn" onclick="goodEditUrl(18)">资料修改</button><div>&nbsp;</div><button class="btn btn_green dialog_handle_btn" onclick="stockEdit(18,1,4,'%E6%99%BA%E5%95%86%E5%85%85%E5%80%BC%E5%8D%A1')">库存修改</button>    </td> </tr><tr class="bought_hd">    <td colspan="5">        有效期：2015-03-16&nbsp;至&nbsp;2016-02-29&nbsp;&nbsp;添加时间：2015-03-16 11:48:39    </td></tr><tr class="bought_bd">    <td class="td baobei">        <table class="baodetail">            <tbody><tr>                <td class="baodetail_1" colspan="2">充值测试的 <strong>限时促销</strong></td>            </tr>            <tr>                <td class="baodetail_2_1">                    <div>ID：2</div>                    <div>类别：商城商品</div>                    <div>图片名：B.jpg</div>                    <div>排序值：4</div>                </td>                <td class="baodetail_2_2">                    <div>游戏：46 刀塔传奇</div>                    <div>平台：Android</div>                    <div>图片数量：2</div>                    <div>渠道信息：2:QQ登录#3:微信登录#</div>                </td>            </tr>        </tbody></table>    </td>    <td class="td price">40.2/30.5</td>    <td class="td desc">简介21</td>    <td class="td contact">QQ：292838399</td>    <td class="td trade_operate">            <button class="btn btn_grey dialog_handle_btn" onclick="goodEditUrl(2)">资料修改</button>    </td> </tr><tr class="bought_hd">    <td colspan="5">        有效期：2015-03-16&nbsp;至&nbsp;2016-01-01&nbsp;&nbsp;添加时间：2015-03-16 11:48:39    </td></tr><tr class="bought_bd">    <td class="td baobei">        <table class="baodetail">            <tbody><tr>                <td class="baodetail_1" colspan="2">充值1 <strong>活动</strong></td>            </tr>            <tr>                <td class="baodetail_2_1">                    <div>ID：1</div>                    <div>类别：商城商品</div>                    <div>图片名：A.jpg</div>                    <div>排序值：3</div>                </td>                <td class="baodetail_2_2">                    <div>游戏：52 海岛奇兵</div>                    <div>平台：全平台</div>                    <div>图片数量：1</div>                    <div>渠道信息：2:QQ登录#3:微信登录#</div>                </td>            </tr>        </tbody></table>    </td>    <td class="td price">50/0.01</td>    <td class="td desc">简介1</td>    <td class="td contact">QQ：292838399</td>    <td class="td trade_operate">            <button class="btn btn_grey dialog_handle_btn" onclick="goodEditUrl(1)">资料修改</button>    </td> </tr><tr class="bought_hd">    <td colspan="5">        有效期：2015-03-16&nbsp;至&nbsp;2016-01-01&nbsp;&nbsp;添加时间：2015-03-16 11:48:39    </td></tr><tr class="bought_bd">    <td class="td baobei">        <table class="baodetail">            <tbody><tr>                <td class="baodetail_1" colspan="2">充值3 <strong>限时最低价</strong></td>            </tr>            <tr>                <td class="baodetail_2_1">                    <div>ID：3</div>                    <div>类别：商城商品</div>                    <div>图片名：C.jpg</div>                    <div>排序值：2</div>                </td>                <td class="baodetail_2_2">                    <div>游戏：52 海岛奇兵</div>                    <div>平台：全平台</div>                    <div>图片数量：1</div>                    <div>渠道信息：2:QQ登录#3:微信登录#</div>                </td>            </tr>        </tbody></table>    </td>    <td class="td price">30/0.02</td>    <td class="td desc">简介3</td>    <td class="td contact">QQ：292838399</td>    <td class="td trade_operate">            <button class="btn btn_grey dialog_handle_btn" onclick="goodEditUrl(3)">资料修改</button>    </td> </tr><tr class="bought_hd">    <td colspan="5">        有效期：2016-02-23&nbsp;至&nbsp;2016-03-01&nbsp;&nbsp;添加时间：2016-02-23 17:07:16    </td></tr><tr class="bought_bd">    <td class="td baobei">        <table class="baodetail">            <tbody><tr>                <td class="baodetail_1" colspan="2">奇迹暖暖大礼包 <strong>生日祝福</strong></td>            </tr>            <tr>                <td class="baodetail_2_1">                    <div>ID：17</div>                    <div>类别：商城商品</div>                    <div>图片名：m.jpg</div>                    <div>排序值：1</div>                </td>                <td class="baodetail_2_2">                    <div>游戏：78 奇迹暖暖</div>                    <div>平台：全平台</div>                    <div>图片数量：1</div>                    <div>渠道信息：4:游戏账号</div>                </td>            </tr>        </tbody></table>    </td>    <td class="td price">200.5/120.2</td>    <td class="td desc">游戏内所有充值奖励、VIP、活动奖励都可获得。
+
+充值之前最好将密码先改为：wanba123456。充值完成之后再修改成你原有的密码。
+
+充值时间：每天早上10:00至晚上11:00，请看好时间再拍哈！
+
+怎样充值更快？
+必须下单并且付款，信息全部填写完整。
+
+为什么会出现有人跟我抢登游戏账号？
+首先，玩吧绝对会保证玩家的账号安全，绝对不外泄，绝对安全！此外，会出现抢登游戏账号的原因，说明此时客服人员正在为你的游戏进行充值，希望亲此时先配合退出游戏，充值完成后，系统会自动通知你充值已完成。 "</td>    <td class="td contact">2342342342</td>    <td class="td trade_operate">            <button class="btn btn_grey dialog_handle_btn" onclick="goodEditUrl(17)">资料修改</button>    </td> </tr><tr class="bought_hd">    <td colspan="5">        有效期：2015-12-18&nbsp;至&nbsp;1970-01-01&nbsp;&nbsp;添加时间：2015-12-18 12:52:17    </td></tr><tr class="bought_bd">    <td class="td baobei">        <table class="baodetail">            <tbody><tr>                <td class="baodetail_1" colspan="2">充0.01元得125游币 <strong></strong></td>            </tr>            <tr>                <td class="baodetail_2_1">                    <div>ID：16</div>                    <div>类别：游视秀</div>                    <div>图片名：</div>                    <div>排序值：1</div>                </td>                <td class="baodetail_2_2">                    <div>游戏：--</div>                    <div>平台：全平台</div>                    <div>图片数量：1</div>                    <div>渠道信息：</div>                </td>            </tr>        </tbody></table>    </td>    <td class="td price">5/0.01</td>    <td class="td desc"></td>    <td class="td contact"></td>    <td class="td trade_operate">            <button class="btn btn_grey dialog_handle_btn" onclick="goodEditUrl(16)">资料修改</button>    </td> </tr><tr class="bought_hd">    <td colspan="5">        有效期：2015-07-15&nbsp;至&nbsp;2016-07-15&nbsp;&nbsp;添加时间：2015-03-16 11:48:39&nbsp;&nbsp;库存信息：31/1000    </td></tr><tr class="bought_bd">    <td class="td baobei">        <table class="baodetail">            <tbody><tr>                <td class="baodetail_1" colspan="2">玩吧蛋兑换卡包 <strong>炉石测试2</strong></td>            </tr>            <tr>                <td class="baodetail_2_1">                    <div>ID：15</div>                    <div>类别：玩吧蛋兑换</div>                    <div>图片名：C.jpg</div>                    <div>排序值：1</div>                </td>                <td class="baodetail_2_2">                    <div>游戏：--</div>                    <div>平台：全平台</div>                    <div>图片数量：1</div>                    <div>渠道信息：4:游戏账号登录#</div>                </td>            </tr>        </tbody></table>    </td>    <td class="td price">5000/3200</td>    <td class="td desc">炉石传说2</td>    <td class="td contact">QQ：292838399</td>    <td class="td trade_operate">            <button class="btn btn_grey dialog_handle_btn" onclick="goodEditUrl(15)">资料修改</button><div>&nbsp;</div><button class="btn btn_green dialog_handle_btn" onclick="stockEdit(15,31,1000,'%E7%8E%A9%E5%90%A7%E8%9B%8B%E5%85%91%E6%8D%A2%E5%8D%A1%E5%8C%85')">库存修改</button>    </td> </tr><tr class="bought_hd">    <td colspan="5">        有效期：2015-07-15&nbsp;至&nbsp;2016-07-15&nbsp;&nbsp;添加时间：2015-03-16 11:48:39    </td></tr><tr class="bought_bd">    <td class="td baobei">        <table class="baodetail">            <tbody><tr>                <td class="baodetail_1" colspan="2">中国区苹果账号App ID正规充值50元 <strong>输入苹果帐号</strong></td>            </tr>            <tr>                <td class="baodetail_2_1">                    <div>ID：14</div>                    <div>类别：商城商品</div>                    <div>图片名：C.jpg</div>                    <div>排序值：1</div>                </td>                <td class="baodetail_2_2">                    <div>游戏：52 海岛奇兵</div>                    <div>平台：iOS</div>                    <div>图片数量：1</div>                    <div>渠道信息：1:AppStore#</div>                </td>            </tr>        </tbody></table>    </td>    <td class="td price">1/0.01</td>    <td class="td desc">输入苹果帐号</td>    <td class="td contact">QQ：292838399</td>    <td class="td trade_operate">            <button class="btn btn_grey dialog_handle_btn" onclick="goodEditUrl(14)">资料修改</button>    </td> </tr><tr class="bought_hd">    <td colspan="5">        有效期：2015-03-16&nbsp;至&nbsp;2016-01-01&nbsp;&nbsp;添加时间：2015-03-16 11:48:39&nbsp;&nbsp;库存信息：1000/1000    </td></tr><tr class="bought_bd">    <td class="td baobei">        <table class="baodetail">            <tbody><tr>                <td class="baodetail_1" colspan="2">可用玩吧蛋购买的商品4 <strong></strong></td>            </tr>            <tr>                <td class="baodetail_2_1">                    <div>ID：13</div>                    <div>类别：玩吧蛋兑换</div>                    <div>图片名：A.jpg</div>                    <div>排序值：1</div>                </td>                <td class="baodetail_2_2">                    <div>游戏：--</div>                    <div>平台：全平台</div>                    <div>图片数量：1</div>                    <div>渠道信息：4:游戏账号登录#</div>                </td>            </tr>        </tbody></table>    </td>    <td class="td price">1/50</td>    <td class="td desc">玩吧蛋商品4</td>    <td class="td contact">QQ：292838399</td>    <td class="td trade_operate">            <button class="btn btn_grey dialog_handle_btn" onclick="goodEditUrl(13)">资料修改</button><div>&nbsp;</div><button class="btn btn_green dialog_handle_btn" onclick="stockEdit(13,1000,1000,'%E5%8F%AF%E7%94%A8%E7%8E%A9%E5%90%A7%E8%9B%8B%E8%B4%AD%E4%B9%B0%E7%9A%84%E5%95%86%E5%93%814')">库存修改</button>    </td> </tr><tr class="bought_hd">    <td colspan="5">        有效期：2015-03-16&nbsp;至&nbsp;2016-01-01&nbsp;&nbsp;添加时间：2015-03-16 11:48:39&nbsp;&nbsp;库存信息：1000/1000    </td></tr><tr class="bought_bd">    <td class="td baobei">        <table class="baodetail">            <tbody><tr>                <td class="baodetail_1" colspan="2">可用玩吧蛋购买的商品3 <strong></strong></td>            </tr>            <tr>                <td class="baodetail_2_1">                    <div>ID：12</div>                    <div>类别：玩吧蛋兑换</div>                    <div>图片名：A.jpg</div>                    <div>排序值：1</div>                </td>                <td class="baodetail_2_2">                    <div>游戏：--</div>                    <div>平台：全平台</div>                    <div>图片数量：1</div>                    <div>渠道信息：4:游戏账号登录#</div>                </td>            </tr>        </tbody></table>    </td>    <td class="td price">1/100</td>    <td class="td desc">玩吧蛋商品3</td>    <td class="td contact">QQ：292838399</td>    <td class="td trade_operate">            <button class="btn btn_grey dialog_handle_btn" onclick="goodEditUrl(12)">资料修改</button><div>&nbsp;</div><button class="btn btn_green dialog_handle_btn" onclick="stockEdit(12,1000,1000,'%E5%8F%AF%E7%94%A8%E7%8E%A9%E5%90%A7%E8%9B%8B%E8%B4%AD%E4%B9%B0%E7%9A%84%E5%95%86%E5%93%813')">库存修改</button>    </td> </tr></tbody>
+    </table>
+    <div class="paging clearfix" id="paging"></div>
+    <script type="text/javascript">
+        function stockEdit(id, remain, total, goodsname) {
+            var dialog_handle_html = '<div class="dialog_handle">' +
+							'<div class="control_group">' +
+								'<div class="control_label">宝贝：</div>' +
+								'<div class="control_content fs_14">' + decodeURIComponent(goodsname) + '</div><input id="iptId" type="hidden" value="' + id + '" />' +
+							'</div>' +
+							'<div class="control_group">' +
+								'<div class="control_label">库存：</div>' +
+								'<div class="control_content fs_14"><input id="iptRemain" type="text" value="' + remain + '" class="ipt w100"></div>' +
+							'</div>' +
+                            '<div class="control_group">' +
+								'<div class="control_label">总量：</div>' +
+								'<div class="control_content fs_14"><input id="iptTotal" type="text" value="' + total + '" class="ipt w100"></div>' +
+							'</div>' +
+						'</div>';
+            easyDialog.open({
+                container: {
+                    header: '库存修改',
+                    content: dialog_handle_html,
+                    yesFn: stockFn,
+                    noFn: true
+                },
+                fixed: false
+            });
+        }
+        function reload() {
+            search(_globalpageindex, _globalpagesize);
+        }
+        function stockFn() {
+            var parms = {
+                method: 'GoodsStock',
+                id: $('#iptId').val(),
+                remain: $.trim($('#iptRemain').val()),
+                total: $.trim($('#iptTotal').val())
+            };
+            $.post('/ajax/goodscontrol.ashx', parms, function (json) {
+                if (json.status) {
+                    easyDialog.close();
+                    alert('操作成功');
+                    reload();
+                }
+                else {
+                    alert(json.msg);
+                }
+            }, 'json');
+            return false;
+        }
+        function goodEditUrl(id) {
+            location.href = 'goodsdo.html?id=' + id;
+        }
+    </script>
+
+        </div>
+    </div>
+    <script type="text/javascript">
+        $(function () {
+            var focusNum = parseInt('301', 10);
+            if (focusNum == 302 && location.href.indexOf('?') != -1)
+                focusNum = 301;
+            $('.aside li[data-node="' + focusNum + '"]').addClass('on');
+        });
+    </script>
+</body>
+</html>
