@@ -1,26 +1,25 @@
 ﻿@charset "utf-8";
 /* 2015-05-19 Diaosi */
 
-
-.bought_table{ width:100%; table-layout:fixed; color:#3c3c3c}
-.bought_table a{ color:#3c3c3c}
-.bought_table a:hover{ color:#f60}
-.bought_table thead{ background:#4b8df8; color:#fff; border:1px solid #09f; border-bottom:0}
-.bought_table thead th{ height:38px}
-.bought_table .bought_hd td{ background:#f5f5f5; border:1px solid #e8e8e8; border-bottom:0; height:30px; padding-left:10px}
-.bought_table .bought_bd .td{ border:1px solid #e8e8e8; border-top:0; padding:3px 5px 6px}
-.bought_table .baobei{ width:320px; box-sizing:border-box}
-.bought_table .price{ width:80px; text-align:center}
-.bought_table .quantity{ width:60px; text-align:center}
-.bought_table .amount{ width:80px; text-align:center}
-.bought_table .trade_status{ width:100px; text-align:center}
-.bought_table .trade_operate{ width:100px; text-align:center}
-.bought_table .remarks{ width:180px}
-.bought_table .desc{width:360px;}
-.bought_table .contact{width:180px;}
-.bought_table .bought_bd .desc, .bought_table .bought_bd .contact{vertical-align:top}
-.bought_table .bought_bd .baobei{ padding-left:10px; vertical-align:top}
-.bought_table .bought_bd .remarks{ vertical-align:top; color:#9c9c9c}
+.table_bought{ width:100%; table-layout:fixed; color:#3c3c3c}
+.table_bought a{ color:#3c3c3c}
+.table_bought a:hover{ color:#f60}
+.table_bought thead{ background:#aaa; color:#fff; border:1px solid #aaa}
+.table_bought thead th{ height:38px; font:14px "Microsoft yahei"}
+.table_bought .bought_hd td{ background:#f5f5f5; border:1px solid #e8e8e8; border-bottom:0; height:30px; padding-left:10px}
+.table_bought .bought_bd .td{ border:1px solid #e8e8e8; border-top:0; padding:3px 5px 6px}
+.table_bought .baobei{ width:320px; box-sizing:border-box}
+.table_bought .price{ width:80px; text-align:center}
+.table_bought .quantity{ width:60px; text-align:center}
+.table_bought .amount{ width:80px; text-align:center}
+.table_bought .trade_status{ width:100px; text-align:center}
+.table_bought .trade_operate{ width:100px; text-align:center}
+.table_bought .remarks{ width:180px}
+.table_bought .desc{width:360px}
+.table_bought .contact{width:180px}
+.table_bought .bought_bd .desc, .table_bought .bought_bd .contact{vertical-align:top}
+.table_bought .bought_bd .baobei{ padding-left:10px; vertical-align:top}
+.table_bought .bought_bd .remarks{ vertical-align:top; color:#9c9c9c}
 .baodetail{ width:100%; color:#9c9c9c}
 .baodetail_1{ padding-bottom:2px; color:#3c3c3c}
 .baodetail_2_1{ width:60%; word-break:break-all}
@@ -29,13 +28,7 @@
 .dialog_handle{ width:500px}
 .dialog_handle .control_label{ width:80px}
 .dialog_handle .control_content{ margin-left:90px}
-
-/*表单*/
-.table .ipt {width:240px;font-size:12px;border-color:#ccc;color:#555}
-.table .select {color:#555}
-.table .leftrow {width:100px;text-align:center;}
-.table td{padding:5px;height:30px;}
-.table .desc {width:480px;height:120px;}
+.dialog_handle .ipt,.dialog_handle .textarea{ padding:4px 6px}
 
 
 

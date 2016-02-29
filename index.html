@@ -9,13 +9,13 @@
 
 <body class="container">
 <div class="header">
-	<a class="logo" href="index.html"></a>
-    <div class="navbar">
+	<a class="logo" href="index.html">Wanba $$ System</a>
+    <!--<div class="navbar">
     	<ul>
         	<li class="on"><a href="index.html">运营</a></li>
             <li><a href="index.html">财务</a></li>
         </ul>
-    </div>
+    </div>-->
     <div class="navright">
     	<div class="userhead"></div>
         <div class="username">胡一哥哥</div>
@@ -26,7 +26,7 @@
 <div class="body clearfix">
 	<div class="aside">
     	<div class="item open">
-        	<div class="title">商城<i class="icon_tri"><i></i></i></div>
+        	<div class="title"><span>商城</span><i class="icon_tri"><i></i></i></div>
         	<ul>
             	<li class="on"><a href="index.html" class="a">ios充值订单</a></li>
                 <li><a href="index.html" class="a">ios充值订单</a></li>
@@ -34,7 +34,7 @@
             </ul>
         </div>
         <div class="item">
-        	<div class="title">商城<i class="icon_tri"><i></i></i></div>
+        	<div class="title"><span>商城</span><i class="icon_tri"><i></i></i></div>
         	<ul>
             	<li><a href="index.html" class="a">ios充值订单</a></li>
                 <li><a href="index.html" class="a">ios充值订单</a></li>
@@ -44,43 +44,43 @@
     </div><!--/aside-->
     
     <div class="main">
-    	<div class="table_filter clearfix">
-            <div class="query_item">
+    	<div class="filter clearfix">
+            <div class="item">
                 <label>订单号：</label>
-                <input type="text" placeholder="请输入..." class="query_ipt">
+                <input type="text" placeholder="请输入..." class="ipt">
             </div>
-            <div class="query_item">
+            <div class="item">
                 <label>订单状态：</label>
                 <select class="select">
                     <option>待付款</option>
                     <option>付款成功</option>
                 </select>
             </div>
-            <div class="query_item">
+            <div class="item">
                 <label>处理人：</label>
-                <input type="text" class="query_ipt w100">
+                <input type="text" class="ipt">
             </div>
-            <div class="query_item">
+            <div class="item">
                 <label>处理时间：</label>
-                <input type="text" class="query_ipt w100">
+                <input type="text" class="ipt">
                 至
-                <input type="text" class="query_ipt w100">
+                <input type="text" class="ipt">
             </div>
-            <div class="query_item">
+            <div class="item">
                 <button class="btn_normal">查询</button>
                 &nbsp;
                 <button class="btn_normal">导出excel</button>
             </div>
         </div>
         
-        <table class="bought_table">
+        <table class="table_bought">
             <thead>
                 <tr>
                     <th class="baobei">宝贝</th>
                     <th class="price">单价(元)</th>
                     <th class="quantity">数量</th>
                     <th class="amount">实付款(元)</th>
-                    <th class="trade_status">交易状态^</th>
+                    <th class="trade_status">交易状态</th>
                     <th class="trade_operate">交易操作</th>
                     <th class="remarks">备注</th>
                 </tr>
@@ -208,7 +208,7 @@
             </div>
             <div class="control_group" id="basicprice_wrap">
                 <div class="control_label">成本：</div>
-                <div class="control_content"><input type="text" value="" class="ipt w100" id="basicprice">&nbsp;<span class="fs_14">元</span><span class="prompt_error hide">必填</span></div>
+                <div class="control_content"><input type="text" value="" class="ipt" id="basicprice">&nbsp;<span class="fs_14">元</span><span class="prompt_error hide">必填</span></div>
             </div>
             <div class="control_group">
                 <div class="control_label">备注：</div>
@@ -258,7 +258,7 @@ var dialog_handle_html = '<div class="dialog_handle">'+
 							'</div>'+
 							'<div class="control_group" id="basicprice_wrap">'+
 								'<div class="control_label">成本：</div>'+
-								'<div class="control_content fs_14"><input type="text" class="ipt w100" id="basicprice">&nbsp;元</div>'+
+								'<div class="control_content fs_14"><input type="text" class="ipt" id="basicprice">&nbsp;元</div>'+
 								'<span class="prompt_error hide">必填</span>'+
 							'</div>'+
 							'<div class="control_group">'+

@@ -7,15 +7,21 @@
     商品信息
 </title>
     <link href="css/comm.css?2015070701" rel="stylesheet" type="text/css">
-    
-    <link href="css/operate.css?2015052701" rel="stylesheet" type="text/css">
 
     <script src="js/jquery-1.11.2.min.js"></script>
     <script src="js/common.js"></script>
+<style>
+.w240{width:240px}
+.table_add .select{color:#555}
+.table_add .leftrow{width:100px;text-align:center}
+.table_add .textarea{width:480px;height:120px}
+.table_add .ipt,.table_add .textarea{ padding:4px 6px}
+.table_add td{padding:8px}
+</style>
 </head>
 <body class="container">
     <div class="header">
-	    <a class="logo"></a>
+	    <a class="logo" href="index.html">Wanba $$ System</a>
 
         <div class="navright">
     	    <div class="userhead"></div>
@@ -27,13 +33,13 @@
         	<div class="aside">
             
                     <div class="item open">
-        	            <div class="title">商城<i class="icon_tri"><i></i></i></div>
+        	            <div class="title"><span>商城</span><i class="icon_tri"><i></i></i></div>
         	            <ul>
             	            <li data-node="101"><a href="index.html" class="a">ios充值订单</a></li>
                         </ul>
                     </div>
                     <div class="item open">
-        	            <div class="title">商城管理<i class="icon_tri"><i></i></i></div>
+        	            <div class="title"><span>商城管理</span><i class="icon_tri"><i></i></i></div>
         	            <ul>
             	            <li data-node="301"><a href="goodslist.html" class="a">商品列表</a></li>
                             
@@ -45,10 +51,10 @@
         </div><!--/aside-->
         <div class="main">
             
-    <table class="table">
+    <table class="table_add">
         <tr>
             <td class="leftrow">商品名称</td>
-            <td><input id="iptGoodsName" type="text" class="ipt" value="" autocomplete="off" /></td>
+            <td><input id="iptGoodsName" type="text" class="ipt w240" value="" autocomplete="off" /></td>
         </tr>
         <tr>
             <td class="leftrow">商品类型</td>
@@ -82,47 +88,47 @@
         </tr>
         <tr>
             <td class="leftrow">原价</td>
-            <td><input id="iptOriginalPrice" type="text" class="ipt"  autocomplete="off" value="" /></td>
+            <td><input id="iptOriginalPrice" type="text" class="ipt w240"  autocomplete="off" value="" /></td>
         </tr>
         <tr>
             <td class="leftrow">现价</td>
-            <td><input id="iptCurrentPrice" type="text" class="ipt"  autocomplete="off" value="" /></td>
+            <td><input id="iptCurrentPrice" type="text" class="ipt w240"  autocomplete="off" value="" /></td>
         </tr>
         <tr>
             <td class="leftrow">图片后缀</td>
-            <td><input id="iptGoodsPicNameSuffix" type="text" class="ipt"  autocomplete="off" value="" /></td>
+            <td><input id="iptGoodsPicNameSuffix" type="text" class="ipt w240"  autocomplete="off" value="" /></td>
         </tr>
         <tr>
             <td class="leftrow">图片数量</td>
-            <td><input id="iptGoodsPicCount" type="text" class="ipt"  autocomplete="off" value="" /></td>
+            <td><input id="iptGoodsPicCount" type="text" class="ipt w240"  autocomplete="off" value="" /></td>
         </tr>
         <tr>
             <td class="leftrow">促销说明</td>
-            <td><input id="iptExtraText" type="text" class="ipt"  autocomplete="off" value="" /></td>
+            <td><input id="iptExtraText" type="text" class="ipt w240"  autocomplete="off" value="" /></td>
         </tr>
         <tr>
             <td class="leftrow">商品简介</td>
-            <td><textarea id="iptGoodsSummary" class="desc ipt"></textarea></td>
+            <td><textarea id="iptGoodsSummary" class="textarea"></textarea></td>
         </tr>
         <tr>
             <td class="leftrow">联系信息</td>
-            <td><input id="iptContactText" type="text" class="ipt"  autocomplete="off" value="" /></td>
+            <td><input id="iptContactText" type="text" class="ipt w240"  autocomplete="off" value="" /></td>
         </tr>
         <tr>
             <td class="leftrow">渠道信息</td>
-            <td><input id="iptChannelStr" type="text" class="ipt"  autocomplete="off" value="" /></td>
+            <td><input id="iptChannelStr" type="text" class="ipt w240"  autocomplete="off" value="" /></td>
         </tr>
         <tr>
             <td class="leftrow">排序值</td>
-            <td><input id="iptSortId" type="text" class="ipt"  autocomplete="off" value="" /></td>
+            <td><input id="iptSortId" type="text" class="ipt w240"  autocomplete="off" value="" /></td>
         </tr>
         <tr>
             <td class="leftrow">生效时间</td>
-            <td><input id="iptBeginTime" type="text" class="ipt" value="" /></td>
+            <td><input id="iptBeginTime" type="text" class="ipt w240" value="" /></td>
         </tr>
         <tr>
             <td class="leftrow">下架时间</td>
-            <td><input id="iptOverTime" type="text" class="ipt" value="" /></td>
+            <td><input id="iptOverTime" type="text" class="ipt w240" value="" /></td>
         </tr>
         <tr>
             <td class="leftrow"><input type="hidden" id="iptId" value="0" /></td>

@@ -16,7 +16,7 @@
 </head>
 <body class="container">
     <div class="header">
-	    <a class="logo"></a>
+	    <a class="logo" href="index.html">Wanba $$ System</a>
 
         <div class="navright">
     	    <div class="userhead"></div>
@@ -28,7 +28,7 @@
         	<div class="aside">
             
                     <div class="item open">
-        	            <div class="title">商城<i class="icon_tri"><i></i></i></div>
+        	            <div class="title"><span>商城</span><i class="icon_tri"><i></i></i></div>
         	            <ul>
             	            <li data-node="101"><a href="index.html" class="a">ios充值订单</a></li>
                         </ul>
@@ -36,7 +36,7 @@
               
                 
                     <div class="item open">
-        	            <div class="title">商城管理<i class="icon_tri"><i></i></i></div>
+        	            <div class="title"><span>商城管理</span><i class="icon_tri"><i></i></i></div>
         	            <ul>
             	            <li data-node="301"><a href="goodslist.html" class="a">商品列表</a></li>
                             
@@ -48,15 +48,15 @@
         </div><!--/aside-->
         <div class="main">
             
-    <div class="table_filter clearfix">
-	    <div class="query_item">
+    <div class="filter clearfix">
+	    <div class="item">
     	    <label>游戏：</label>
             <select id="selGameId" class="select">
                 <option value="0">全部</option>
         	    <option value="1">1 动动爆</option><option value="2">2 植物大战僵尸2</option><option value="3">3 天天酷跑</option><option value="5">5 时空猎人</option><option value="6">6 奶酪谷仓</option><option value="7">7 我叫MT</option><option value="8">8 神仙道</option><option value="10">10 永恒战士2</option><option value="12">12 部落战争</option><option value="13">13 天天飞车</option><option value="14">14 凡人修真</option><option value="15">15 风云天下</option><option value="17">17 保卫萝卜2</option><option value="18">18 节奏大师</option><option value="19">19 100种蠢蠢的死法</option><option value="22">22 王国保卫战</option><option value="25">25 鳄鱼小顽皮爱洗澡2</option><option value="26">26 大掌门</option><option value="27">27 割绳子2</option><option value="28">28 全民英雄</option><option value="30">30 苍穹之剑</option><option value="32">32 全民飞机大战</option><option value="33">33 神魔之塔</option><option value="34">34 啪啪三国</option><option value="35">35 吞月之狼</option><option value="36">36 天天逆战</option><option value="37">37 天天炫斗</option><option value="38">38 天天富翁</option><option value="39">39 城堡争霸</option><option value="40">40 雷霆战机</option><option value="41">41 放开那三国</option><option value="43">43 全民砰砰砰</option><option value="44">44 爱情公寓</option><option value="45">45 全民炫舞</option><option value="46">46 刀塔传奇</option><option value="47">47 全民小镇</option><option value="48">48 神之刃</option><option value="49">49 龙之守护</option><option value="50">50 战争总动员</option><option value="51">51 暗黑光年</option><option value="52">52 海岛奇兵</option><option value="53">53 全民精灵</option><option value="54">54 全民打怪兽</option><option value="56">56 天降-近卫英雄传</option><option value="57">57 糖果粉碎传奇</option><option value="58">58 仙剑奇侠传</option><option value="59">59 全民农场</option><option value="60">60 锁链战记</option><option value="61">61 血族</option><option value="64">64 忍者必须死2</option><option value="66">66 爆笑西游</option><option value="68">68 勇者前线</option><option value="69">69 怪物弹珠</option><option value="71">71 天天风之旅</option><option value="73">73 天天来战</option><option value="74">74 我叫MT2</option><option value="75">75 秦时明月2</option><option value="76">76 梦幻西游</option><option value="77">77 全民突击</option><option value="78">78 奇迹暖暖</option><option value="79">79 炉石传说</option><option value="81">81 全民奇迹</option><option value="82">82 我叫MT外传</option><option value="83">83 战舰少女</option><option value="84">84 天天传奇</option><option value="85">85 热血传奇</option><option value="86">86 保卫萝卜3</option><option value="88">88 折扣游戏</option><option value="89">89 手游挖掘机</option><option value="91">91 千娇百妹</option><option value="92">92 安卓代充</option><option value="93">93 九龙战</option><option value="94">94 拳皇98终极之战OL</option><option value="95">95 火影忍者</option><option value="96">96 愤怒的小鸟2</option><option value="97">97 纪念碑谷</option><option value="98">98 乖离性百万亚瑟王</option><option value="99">99 虚荣</option><option value="100">100 全民超神 </option>
             </select>
         </div>
-        <div class="query_item">
+        <div class="item">
     	    <label>商品类型：</label>
             <select id="selGoodsType" class="select">
                 <option value="-1">全部</option>
@@ -64,7 +64,7 @@
                 <option value="1">玩吧蛋兑换</option>
             </select>
         </div>
-        <div class="query_item">
+        <div class="item">
     	    <label>平台：</label>
             <select id="selDeviceType" class="select">
                 <option value="0">全部</option>
@@ -72,7 +72,7 @@
                 <option value="2">iOS</option>
             </select>
         </div>
-        <div class="query_item">
+        <div class="item">
     	    <label>状态：</label>
             <select id="selStatus" class="select">
                 <option value="0">全部</option>
@@ -81,11 +81,11 @@
                 <option value="3">已下架</option>
             </select>
         </div>
-        <div class="query_item">
+        <div class="item">
     	    <button class="btn_normal" onclick="search(1, 10)">查询</button>
         </div>
     </div>
-    <table class="bought_table" id="datatable">
+    <table class="table_bought" id="datatable">
 	    <thead>
     	    <tr>
                 <th class="baobei">宝贝</th>

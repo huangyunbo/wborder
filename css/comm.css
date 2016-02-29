@@ -2,7 +2,7 @@
 /* 2015-05-19 Diaosi */
 
 body,ul,ol,li,h1,h2,h3,h4,h5,h6,p,pre,code,form,dl,dd,dt,input,textarea,button,select,th,td,iframe{ margin:0; padding:0}
-html{ font:12px/1.5 tahoma, arial, \5b8b\4f53, sans-serif}
+html{ font:12px/1.5 \5b8b\4f53}
 img{ border:0}
 h1,h2,h3,h4,h5,h6{ font-size:100%; font-weight:normal}
 button,input,select,textarea{ font-size:100%; vertical-align:baseline; *vertical-align:middle}
@@ -14,36 +14,35 @@ em,i,code,cite,address,th{font-style:normal}
 .clearfix{*zoom:1;_height:1px}
 .clearfix:after{content:".";display:block;height:0;clear:both;visibility:hidden}
 a{ text-decoration:none; outline:none}
-a:hover{ text-decoration:underline}
 
 .container{ background:url(../images/aside_bg.gif) repeat-y; min-width:1000px}
-.header{ height:50px; background:#fff; border-bottom:1px solid #aec0d8; box-shadow:-2px 0 2px #aec0d8; margin-bottom:10px; position:relative}
-.logo{ width:73px; height:40px; background:url(../images/logo.png) no-repeat; position:absolute; left:10px; top:7px}
-.navbar{ font-family:"Microsoft yahei", sans-serif; font-size:18px; position:absolute; bottom:0; left:150px}
+.header{ height:50px; background:#37424e; margin-bottom:10px; position:relative}
+.logo{ color:#fff; font:24px Arial; position:absolute; top:12px; left:10px}
+.logo:hover{ text-decoration:none}
+.navbar{ font-family:"Microsoft yahei", sans-serif; font-size:18px; position:absolute; bottom:0; left:230px}
 .navbar li{ float:left; margin:0 20px 0 0}
-.navbar a{ color:#000}
-.navbar li.on{ background:#37424e; border-radius:5px 5px 0 0; padding:1px 15px}
-.navbar li.on a{color:#fff}
-.navright{ float:right; padding-top:12px}
-.navright .userhead{ width:30px; height:30px; background:url(../images/icon.png) 0 -56px; float:left}
-.navright .username{ float:left; margin:8px 10px 0}
-.navright .quit{ float:left; margin:8px 20px 0; color:#000}
-.aside{ width:150px; position:absolute; color:#aec0d8; left:0}
-.aside a{ color:#aec0d8}
-.aside .item{ position:relative}
+.navbar a{ color:#fff}
+.navbar li.on{ background:#fff; border-radius:5px 5px 0 0; padding:1px 15px}
+.navbar li.on a{color:#000}
+.navright{ float:right; padding-top:15px}
+.navright .userhead{ width:24px; height:24px; background:url(../images/icon.png) no-repeat; float:left}
+.navright .username{ float:left; margin:3px 10px 0; color:#fff}
+.navright .quit{ float:left; margin:3px 20px 0; color:#fff}
+.aside{ width:150px; position:absolute; left:0}
 .aside .item ul{ display:none}
 .aside .item.open ul{ display:block}
-.aside .item .title{ padding-left:20px; margin:7px 0}
-.aside .item li{ margin:2px 0}
-.aside .item li a{ display:block; padding:5px 0 5px 32px}
-.aside .item li a:hover{ background:#2d363f; color:#fff}
-.aside .item li.on{ border-left:4px solid #42a4ff; padding-left:8px}
-.aside .item li.on a{ background:#2d363f; color:#fff; padding-left:20px}
-.aside .item.open .icon_tri,.aside .item.open .icon_tri i{ position:absolute; width:0; height:0; top:8px; *top:4px; right:7px; border-width:6px; border-style:solid dashed dashed dashed; border-color:#aec0d8 transparent transparent transparent}
-.aside .item.open .icon_tri i{ top:-7px; left:-6px; border-color:#37424e transparent transparent transparent}
-.aside .item .icon_tri,.aside .item .icon_tri i{ position:absolute; width:0; height:0; top:4px; *top:0; right:7px; border-width:6px; border-style:dashed solid dashed dashed; border-color:transparent #aec0d8 transparent transparent}
-.aside .item .icon_tri i{ top:-6px; left:-5px; border-color:transparent #37424e transparent transparent}
-.main{ margin-left:160px}
+.aside .item .title{ padding-left:20px; margin:7px 0; position:relative}
+.aside .item .title span{ font:14px "Microsoft yahei"; color:#aec0d8}
+.aside .item li{ padding-bottom:1px}
+.aside .item li a{ color:#aec0d8; display:block; padding:7px 0 7px 30px}
+.aside .item li a:hover{ background:#37424e; color:#fff}
+.aside .item li.on{ border-right:4px solid #42a4ff}
+.aside .item li.on a{ background:#37424e; color:#fff}
+.aside .item .icon_tri,.aside .item .icon_tri i{ position:absolute; width:0; height:0; top:4px; *top:0; right:7px; border-width:6px; _border-width:0; border-style:dashed solid dashed dashed; border-color:transparent #aec0d8 transparent transparent}
+.aside .item .icon_tri i{ top:-6px; left:-5px; border-color:transparent #385575 transparent transparent}
+.aside .item.open .icon_tri,.aside .item.open .icon_tri i{ position:absolute; width:0; height:0; top:8px; *top:4px; right:7px; border-width:6px; _border-width:0; border-style:solid dashed dashed dashed; border-color:#aec0d8 transparent transparent transparent}
+.aside .item.open .icon_tri i{ top:-7px; left:-6px; border-color:#385575 transparent transparent transparent}
+.main{ margin:0 10px 0 160px}
 /*按钮*/
 .btn_normal{ padding:2px 7px; padding:0 7px\0; cursor:pointer}
 .btn{ padding:6px 14px; color:#fff; border:1px solid; outline:none; border-radius:2px; -webkit-appearance:none; cursor:pointer}
@@ -63,7 +62,7 @@ a:hover{ text-decoration:underline}
 .paging{ margin-top:6px}
 .paging .page_size{ float:left; margin-top:4px}
 .paging .page_number{ float:right; box-shadow:0 1px 2px rgba(0,0,0,0.05); border-left:1px solid #ddd}
-.paging .page_number .n{ float:left; cursor:pointer; border:1px solid #ddd; border-left-width:0; padding:4px 12px; color:#0d638f}
+.paging .page_number .n{ float:left; cursor:pointer; border:1px solid #ddd; border-left-width:0; padding:4px 12px; color:#385575}
 .paging .page_number .n:hover{ background:#f5f5f5}
 .paging .page_number .dot{ color:#999; cursor:default}
 .paging .page_number .dot:hover{ background:none}
@@ -86,29 +85,26 @@ a:hover{ text-decoration:underline}
 .control_content{ margin-left:170px}
 .radio_label{ margin-right:15px; font-size:14px}
 .radio_label .radio{ vertical-align:-2px; margin-right:2px}
-.ipt,.textarea{ color:#333; padding:4px 6px; height:20px; line-height:20px; font-size:14px; border:1px solid #e5e5e5}
+.ipt{ width:100px}
+.ipt,.textarea{ height:20px; line-height:20px; font-size:13px; border:1px solid #c7c7c7}
 .textarea{ height:auto; vertical-align:-3px}
 .select{ padding:2px; padding:1px\0}
-.prompt_help{ font-size:12px; color:#aaa; margin-left:5px}
-.prompt_error,.prompt_ok{ height:14px; line-height:14px; margin-left:5px; background:url(../images/icon.png) -28px 0 no-repeat; display:inline-block; padding-left:14px; color:#cc0000}
-.prompt_ok{ background-position:-28px -28px; color:#3c3}
-.control_content.error .prompt_error{ display:inline-block}
 /*表单顶部*/
-.table_filter{ background:#ebebeb; padding-left:10px; border-top:1px solid #ddd}
-.table_filter .query_item{ float:left; margin-right:20px; padding:3px 0 2px}
-.table_filter .query_item .query_ipt{ padding:0 2px; height:18px; line-height:18px; color:#333}
-.table_filter .query_item:last-child{ margin-right:0}
+.filter{ background:#ebebeb; padding:5px 0 10px 10px; border-top:1px solid #ddd}
+.filter .item{ float:left; margin-right:20px; padding:3px 0 2px}
+.filter .item:last-child{ margin-right:0}
 /*通用表格*/
 .table{ width:100%; font-size:12px}
-.table_thead{ background:#f9f9f9; border:solid #e3e3e3; border-width:1px 0}
-.table_thead th{ *border:solid #e3e3e3; *border-width:1px 0; color:#888; padding:4px 0 5px; white-space:nowrap}
-.table .tr{ border-bottom:1px solid #e3e3e3}
-.table .tr.no{ border:none}
-.table .tr:hover{ background:#f9f9f9}
-.table .td{ *border-bottom:1px solid #e3e3e3; padding:5px 0}
-.table .tr.no .td{ border:none; padding:3px}
-.table_layout_1 .table_thead th{ text-align:left; padding-left:10px; vertical-align:top}
-.table_layout_1 .td{ padding-left:10px; vertical-align:top}
+.table thead{ background:#f9f9f9; border:solid #e3e3e3; border-width:1px 0}
+.table thead th{ *border:solid #e3e3e3; *border-width:1px 0; color:#888; padding:4px 0 5px; text-align:left; vertical-align:top}
+.table thead th:first-child{ padding-left:10px}
+.table tr{ border-bottom:1px solid #e3e3e3}
+.table tr:hover{ background:#f9f9f9}
+.table td{ *border-bottom:1px solid #e3e3e3; padding:5px 0; vertical-align:top}
+.table td:first-child{ padding-left:10px}
+.table tr.no{ border:none}
+.table tr.no:hover{ background:none}
+.table tr.no td{ border:none}
 /*通用*/
 .fs_14{ font-size:14px}
 .w100{ width:100px}
