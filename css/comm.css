@@ -2,7 +2,7 @@
 /* 2015-05-19 Diaosi */
 
 body,ul,ol,li,h1,h2,h3,h4,h5,h6,p,pre,code,form,dl,dd,dt,input,textarea,button,select,th,td,iframe{ margin:0; padding:0}
-html{ font:12px/1.5 \5b8b\4f53}
+html{ font:12px/1.5 \5b8b\4f53, sans-serif}
 img{ border:0}
 h1,h2,h3,h4,h5,h6{ font-size:100%; font-weight:normal}
 button,input,select,textarea{ font-size:100%; vertical-align:baseline; *vertical-align:middle}
@@ -18,12 +18,11 @@ a{ text-decoration:none; outline:none}
 .container{ background:url(../images/aside_bg.gif) repeat-y; min-width:1000px}
 .header{ height:50px; background:#37424e; margin-bottom:10px; position:relative}
 .logo{ color:#fff; font:24px Arial; position:absolute; top:12px; left:10px}
-.logo:hover{ text-decoration:none}
 .navbar{ font-family:"Microsoft yahei", sans-serif; font-size:18px; position:absolute; bottom:0; left:230px}
 .navbar li{ float:left; margin:0 20px 0 0}
 .navbar a{ color:#fff}
 .navbar li.on{ background:#fff; border-radius:5px 5px 0 0; padding:1px 15px}
-.navbar li.on a{color:#000}
+.navbar li.on a{color:#37424e}
 .navright{ float:right; padding-top:15px}
 .navright .userhead{ width:24px; height:24px; background:url(../images/icon.png) no-repeat; float:left}
 .navright .username{ float:left; margin:3px 10px 0; color:#fff}
@@ -35,12 +34,11 @@ a{ text-decoration:none; outline:none}
 .aside .item .title span{ font:14px "Microsoft yahei"; color:#aec0d8}
 .aside .item li{ padding-bottom:1px}
 .aside .item li a{ color:#aec0d8; display:block; padding:7px 0 7px 30px}
-.aside .item li a:hover{ background:#37424e; color:#fff}
+.aside .item li a:hover,.aside .item li.on a{ background:#37424e; color:#fff}
 .aside .item li.on{ border-right:4px solid #42a4ff}
-.aside .item li.on a{ background:#37424e; color:#fff}
-.aside .item .icon_tri,.aside .item .icon_tri i{ position:absolute; width:0; height:0; top:4px; *top:0; right:7px; border-width:6px; _border-width:0; border-style:dashed solid dashed dashed; border-color:transparent #aec0d8 transparent transparent}
+.aside .item .icon_tri,.aside .item .icon_tri i{ position:absolute; width:0; height:0; top:4px; right:7px; border-width:6px; _border-width:0; border-style:dashed solid dashed dashed; border-color:transparent #aec0d8 transparent transparent}
 .aside .item .icon_tri i{ top:-6px; left:-5px; border-color:transparent #385575 transparent transparent}
-.aside .item.open .icon_tri,.aside .item.open .icon_tri i{ position:absolute; width:0; height:0; top:8px; *top:4px; right:7px; border-width:6px; _border-width:0; border-style:solid dashed dashed dashed; border-color:#aec0d8 transparent transparent transparent}
+.aside .item.open .icon_tri,.aside .item.open .icon_tri i{ top:8px; right:7px; border-style:solid dashed dashed dashed; border-color:#aec0d8 transparent transparent transparent}
 .aside .item.open .icon_tri i{ top:-7px; left:-6px; border-color:#385575 transparent transparent transparent}
 .main{ margin:0 10px 0 160px}
 /*按钮*/
@@ -104,7 +102,7 @@ a{ text-decoration:none; outline:none}
 .table td:first-child{ padding-left:10px}
 .table tr.no{ border:none}
 .table tr.no:hover{ background:none}
-.table tr.no td{ border:none}
+.table tr.no td{ *border:none}
 /*通用*/
 .fs_14{ font-size:14px}
 .w100{ width:100px}
