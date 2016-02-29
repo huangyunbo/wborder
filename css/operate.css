@@ -1,4 +1,4 @@
-@charset "utf-8";
+﻿@charset "utf-8";
 /* 2015-05-19 Diaosi */
 
 
@@ -16,6 +16,9 @@
 .bought_table .trade_status{ width:100px; text-align:center}
 .bought_table .trade_operate{ width:100px; text-align:center}
 .bought_table .remarks{ width:180px}
+.bought_table .desc{width:360px;}
+.bought_table .contact{width:180px;}
+.bought_table .bought_bd .desc, .bought_table .bought_bd .contact{vertical-align:top}
 .bought_table .bought_bd .baobei{ padding-left:10px; vertical-align:top}
 .bought_table .bought_bd .remarks{ vertical-align:top; color:#9c9c9c}
 .baodetail{ width:100%; color:#9c9c9c}
@@ -26,6 +29,13 @@
 .dialog_handle{ width:500px}
 .dialog_handle .control_label{ width:80px}
 .dialog_handle .control_content{ margin-left:90px}
+
+/*表单*/
+.table .ipt {width:240px;font-size:12px;border-color:#ccc;color:#555}
+.table .select {color:#555}
+.table .leftrow {width:100px;text-align:center;}
+.table td{padding:5px;height:30px;}
+.table .desc {width:480px;height:120px;}
 
 
 
