@@ -16,7 +16,7 @@ em,i,code,cite,address,th{font-style:normal}
 a{ text-decoration:none; outline:none}
 
 .container{ background:url(../images/aside_bg.gif) repeat-y; min-width:1000px}
-.header{ height:50px; background:#37424e; margin-bottom:10px; position:relative}
+.header{ height:50px; background:#4d7496; margin-bottom:10px; position:relative}
 .logo{ color:#fff; font:24px Arial; position:absolute; top:12px; left:10px}
 .navbar{ font-family:"Microsoft yahei", sans-serif; font-size:18px; position:absolute; bottom:0; left:230px}
 .navbar li{ float:left; margin:0 20px 0 0}
@@ -31,14 +31,14 @@ a{ text-decoration:none; outline:none}
 .aside .item ul{ display:none}
 .aside .item.open ul{ display:block}
 .aside .item .title{ padding-left:20px; margin:7px 0; position:relative}
-.aside .item .title span{ font:14px "Microsoft yahei"; color:#aec0d8}
+.aside .item .title span{ font:14px "Microsoft yahei"; color:#fff}
 .aside .item li{ padding-bottom:1px}
-.aside .item li a{ color:#aec0d8; display:block; padding:7px 0 7px 30px}
-.aside .item li a:hover,.aside .item li.on a{ background:#37424e; color:#fff}
-.aside .item li.on{ border-right:4px solid #42a4ff}
+.aside .item li a{ color:#fff; display:block; padding:7px 0 7px 30px}
+.aside .item li a:hover,.aside .item li.on a{ background:#60bcff; color:#444}
+.aside .item li.on{ border-right:4px solid #dd910a}
 .aside .item .icon_tri,.aside .item .icon_tri i{ position:absolute; width:0; height:0; top:4px; right:7px; border-width:6px; _border-width:0; border-style:dashed solid dashed dashed; border-color:transparent #aec0d8 transparent transparent}
-.aside .item .icon_tri i{ top:-6px; left:-5px; border-color:transparent #385575 transparent transparent}
-.aside .item.open .icon_tri,.aside .item.open .icon_tri i{ top:8px; right:7px; border-style:solid dashed dashed dashed; border-color:#aec0d8 transparent transparent transparent}
+.aside .item .icon_tri i{ top:-6px; left:-5px; border-color:transparent #eee transparent transparent}
+.aside .item.open .icon_tri,.aside .item.open .icon_tri i{ top:8px; right:7px; border-style:solid dashed dashed dashed; border-color:#eee transparent transparent transparent}
 .aside .item.open .icon_tri i{ top:-7px; left:-6px; border-color:#385575 transparent transparent transparent}
 .main{ margin:0 10px 0 160px}
 /*按钮*/
@@ -92,7 +92,7 @@ a{ text-decoration:none; outline:none}
 .prompt_ok{ background-position:-28px -28px; color:#3c3}
 .control_content.error .prompt_error{ display:inline-block}
 /*表单顶部*/
-.filter{ background:#ebebeb; padding:5px 0 10px 10px; border-top:1px solid #ddd}
+.filter{ background:#fff; padding:10px 0 10px 10px; border:1px solid #ddd;margin-bottom:10px;}
 .filter .item{ float:left; margin-right:20px; padding:3px 0 2px}
 .filter .item:last-child{ margin-right:0}
 /*通用表格*/

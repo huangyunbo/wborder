@@ -4,7 +4,7 @@
 .table_bought{ width:100%; table-layout:fixed; color:#3c3c3c}
 .table_bought a{ color:#3c3c3c}
 .table_bought a:hover{ color:#f60}
-.table_bought thead{ background:#aaa; color:#fff; border:1px solid #aaa}
+.table_bought thead{ background:#5c8bb9; color:#fff; border:1px solid #5486b8}
 .table_bought thead th{ height:38px; font:14px "Microsoft yahei"}
 .table_bought .bought_hd td{ background:#f5f5f5; border:1px solid #e8e8e8; border-bottom:0; height:30px; padding-left:10px}
 .table_bought .bought_bd .td{ border:1px solid #e8e8e8; border-top:0; padding:3px 5px 6px}
